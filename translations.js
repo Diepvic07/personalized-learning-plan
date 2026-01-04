@@ -90,6 +90,11 @@ var translations = {
                 vi: "Vui lòng chỉ rõ mục tiêu của bạn",
                 es: "Por favor especifica tu objetivo"
             },
+            targetDate: {
+                en: "Valid target date (MM/YYYY) is required",
+                vi: "Vui lòng nhập ngày mục tiêu hợp lệ (MM/YYYY)",
+                es: "Se requiere una fecha objetivo válida (MM/YYYY)"
+            },
             devices: {
                 en: "At least one device must be selected",
                 vi: "Vui lòng chọn ít nhất một thiết bị",
@@ -263,6 +268,11 @@ var translations = {
                     en: "Please enter a future date",
                     vi: "Vui lòng nhập một ngày trong tương lai",
                     es: "Por favor ingresa una fecha futura"
+                },
+                errorDDMMYYYY: {
+                    en: "Please use MM/YYYY format. Do not include the day.",
+                    vi: "Vui lòng dùng định dạng MM/YYYY. Không bao gồm ngày.",
+                    es: "Por favor use el formato MM/YYYY. No incluya el día."
                 }
             },
             q6_daily_time: {
