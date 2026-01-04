@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Commitment Statement</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec5b",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102216",
+                        "brand-blue": "#0f233a", 
+                        "brand-blue-light": "#1a3656",
+                        "ejoy-blue": "#1da1f2",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-brand-blue text-white font-display overflow-hidden selection:bg-primary selection:text-brand-blue">
+<div class="relative flex h-screen w-full flex-col max-w-md mx-auto shadow-2xl overflow-hidden bg-brand-blue">
+<header class="flex flex-col w-full z-10 pt-6 px-4">
+<div class="flex items-center justify-between w-full mb-2">
+<button aria-label="Close" class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-white/10 transition-colors text-white/70 hover:text-white">
+<span class="material-symbols-outlined text-[28px]">close</span>
+</button>
+<div class="flex-1 text-center pr-10">
+<span class="text-xs font-bold tracking-[0.15em] uppercase text-white/50">Commitment Statement</span>
+</div>
+</div>
+<div class="flex items-center justify-center w-full py-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-ejoy-blue" style="font-size: 24px;">school</span>
+<span class="text-ejoy-blue font-bold text-xl tracking-tight font-display">eJOY English</span>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center px-6 relative z-10 pb-20">
+<div class="mb-8 p-4 bg-brand-blue-light/50 rounded-full border border-white/5 shadow-inner">
+<span class="material-symbols-outlined text-primary text-[48px]">verified_user</span>
+</div>
+<h1 class="text-white text-[32px] md:text-[36px] font-bold leading-tight text-center tracking-tight mb-8 drop-shadow-sm">
+                Building a new habit may feel uncomfortable at first.
+            </h1>
+<div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 w-full">
+<p class="text-lg md:text-xl text-center font-medium leading-relaxed text-white/90">
+                    "I choose <span class="text-primary font-bold">courage</span> over comfort—and I’m willing to try."
+                </p>
+</div>
+</main>
+<footer class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-brand-blue via-brand-blue to-transparent pt-12 z-20">
+<button class="w-full group relative flex items-center justify-center overflow-hidden rounded-xl h-14 bg-primary text-brand-blue text-lg font-bold shadow-[0_0_20px_rgba(19,236,91,0.3)] hover:shadow-[0_0_30px_rgba(19,236,91,0.5)] transition-all duration-300 transform active:scale-[0.98]">
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+<span class="relative z-10 flex items-center gap-2">
+                    I'm ready to try new habit
+                    <span class="material-symbols-outlined text-[20px] font-bold">arrow_forward</span>
+</span>
+</button>
+<p class="text-center text-white/30 text-xs mt-4 font-light">
+                Secure your commitment to continue
+            </p>
+</footer>
+<div class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-brand-blue-light/20 to-transparent pointer-events-none z-0"></div>
+<div class="absolute -top-[20%] -right-[20%] w-[60%] h-[60%] rounded-full bg-primary/5 blur-[100px] pointer-events-none z-0"></div>
+<div class="absolute bottom-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-blue-500/10 blur-[80px] pointer-events-none z-0"></div>
+</div>
+
+</body></html>
