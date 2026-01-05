@@ -148,39 +148,39 @@ window.handleEmailFormSubmit = async function (event) {
   const feasibility = Utils.calculateFeasibility(formData);
   const requiredHours = Math.round(feasibility.details.requiredHours || 0);
 
-  // Generate suggested document name: "UserName - PlanTitle - Date"
-  let suggestedDocName = '';
-  const userName = contactData.name || 'User';
-  const today = new Date();
-  const dateStr = today.toISOString().split('T')[0]; // YYYY-MM-DD format
+  // 1. Call Apps Script to Generate Plan and Email
+  // This ensures the link in the form matches the email link
+  let generatedDocLink = null;
 
-  if (planId !== 'no-match' && PLANS && PLANS[planId]) {
-    const plan = PLANS[planId];
-    const planTitle = plan.title || `Plan ${planId}`;
-    suggestedDocName = `${userName} - ${planTitle} - ${dateStr}`;
-  } else {
-    suggestedDocName = `${userName} - Custom Plan - ${dateStr}`;
+  if (CONFIG.googleForm.scriptUrl) {
+    showLoading(lang === 'vi' ? 'Đang tạo kế hoạch...' : lang === 'es' ? 'Creando plan...' : 'Creating plan...');
+    generatedDocLink = await GoogleForms.generatePersonalPlan({
+      name: contactData.name,
+      email: contactData.email,
+      planId: planId,
+      nativeLanguage: contactData.nativeLanguage || userData.nativeLanguage
+    });
   }
 
-  // Log the suggested name for verification
-  console.log('[NamingConvention] Generated:', suggestedDocName);
+  // Fallback if script fails or not configured (use template link)
+  // Note: If usage of script is mandatory, we might want to show error instead.
+  // For now, consistent with legacy behavior, we use the template link if generation fails.
+  const finalPlanDocLink = generatedDocLink || planDocLink;
 
   // Prepare complete submission data
-  // We append requiredHours to dailyTime to ensure it passes to backend placeholders if needed
-  // We also ensure targetDate is robust
   const submissionData = {
     ...userData.formData,
     ...contactData,
     nativeLanguage: userData.nativeLanguage,
     planId: planId,
-    planDocLink: planDocLink,
+    planDocLink: finalPlanDocLink, // Use the generated link!
     firstLessonLink: firstLessonLink,
-    // Add computed fields if backend needs them (often passed as extra params or appended)
     dailyTime: `${userData.formData.dailyTime} (Required: ${requiredHours}h)`,
-    requiredHours: requiredHours // In case we add a mapping later or use it in GoogleForms extension
+    requiredHours: requiredHours
   };
 
   // Submit to Google Forms
+  showLoading(lang === 'vi' ? 'Đang gửi...' : lang === 'es' ? 'Enviando...' : 'Submitting...');
   const success = await GoogleForms.submit(submissionData);
 
   if (success) {

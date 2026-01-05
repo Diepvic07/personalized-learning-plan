@@ -159,6 +159,46 @@ const GoogleForms = {
                 resolve(false);
             }
         });
+    },
+
+    /**
+     * Call Apps Script Web App to generate plan and get URL
+     * @param {object} userData - User Data
+     * @returns {Promise<string|null>} The generated Doc URL or null on error
+     */
+    async generatePersonalPlan(userData) {
+        try {
+            const scriptUrl = CONFIG.googleForm.scriptUrl;
+            if (!scriptUrl) {
+                console.warn("[GoogleForms] No scriptUrl configured. Skipping generation.");
+                return null;
+            }
+
+            const params = new URLSearchParams({
+                name: userData.name || 'User',
+                email: userData.email,
+                planId: userData.planId || '',
+                nativeLanguage: userData.nativeLanguage || 'en'
+            });
+
+            const url = `${scriptUrl}?${params.toString()}`;
+            console.log("[GoogleForms] Calling Script:", url);
+
+            const response = await fetch(url);
+            const data = await response.json();
+
+            if (data.status === 'success' && data.url) {
+                console.log("[GoogleForms] Plan Generated:", data.url);
+                return data.url;
+            } else {
+                console.error("[GoogleForms] Script Error:", data.message);
+                return null;
+            }
+
+        } catch (error) {
+            console.error("[GoogleForms] Network/Parsing Error:", error);
+            return null;
+        }
     }
 };
 
