@@ -88,6 +88,14 @@ function doGet(e) {
     console.log("--- START: doGet ---");
 
     try {
+        // Validation for Manual Runs (Debugging)
+        if (!e || !e.parameter) {
+            return ContentService.createTextOutput(JSON.stringify({
+                status: "error",
+                message: "No parameters found. Are you running this manually? Use testDoGet() for debugging."
+            })).setMimeType(ContentService.MimeType.JSON);
+        }
+
         const params = e.parameter;
         const userName = params.name || "User";
         const userEmail = params.email;
@@ -170,4 +178,25 @@ function doGet(e) {
             message: error.toString()
         })).setMimeType(ContentService.MimeType.JSON);
     }
+}
+
+/**
+ * TEST FUNCTION: Run this manually in the Editor to test the script
+ * Mimics a request from the frontend
+ */
+function testDoGet() {
+    const mockAndEvent = {
+        parameter: {
+            name: "Test User",
+            email: "diep.vic.07@gmail.com", // CHANGE TO YOUR EMAIL FOR TESTING
+            planId: "5",
+            nativeLanguage: "vi",
+            templateId: "1BaPRUBfuRnlj8jP6rxprpEgGzaah1oTULNr2giXNxJ8", // Example Template ID
+            requiredHours: "100"
+        }
+    };
+
+    console.log("Running Test...");
+    const result = doGet(mockAndEvent);
+    console.log("Result content:", result.getContent());
 }
