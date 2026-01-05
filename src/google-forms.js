@@ -28,8 +28,24 @@ const GoogleForms = {
             formData.append(config.fields.dailyTime, userData.dailyTime || '');
 
             // Arrays - join with commas
-            formData.append(config.fields.devices,
-                Array.isArray(userData.devices) ? userData.devices.join(', ') : userData.devices || '');
+            // Devices - map keys to English labels
+            let devicesStr = '';
+            if (Array.isArray(userData.devices)) {
+                devicesStr = userData.devices.map(key => {
+                    // Start of mapping logic
+                    try {
+                        if (typeof translations !== 'undefined' &&
+                            translations.questionnaire?.questions?.q7_devices?.options?.[key]?.en) {
+                            return translations.questionnaire.questions.q7_devices.options[key].en;
+                        }
+                    } catch (e) {
+                        console.warn('Translation lookup failed for device:', key);
+                    }
+                    // Fallback to key itself (capitalized for niceness)
+                    return key.charAt(0).toUpperCase() + key.slice(1);
+                }).join(', ');
+            }
+            formData.append(config.fields.devices, devicesStr);
             formData.append(config.fields.habits,
                 Array.isArray(userData.habits) ? userData.habits.join(', ') : userData.habits || '');
             formData.append(config.fields.methods,

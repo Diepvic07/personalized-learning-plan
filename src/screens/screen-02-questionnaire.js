@@ -209,7 +209,7 @@ function renderQuestion6(formData, content, lang) {
 }
 
 function renderQuestion7(formData, content, lang) {
-  const devices = ['mobile', 'laptop', 'both'];
+  const devices = ['mobile', 'laptop'];
   const selected = formData.devices || [];
   return `
     <hr class="border-slate-100"/>
@@ -223,11 +223,11 @@ function renderQuestion7(formData, content, lang) {
       <div class="flex flex-col gap-3">
         ${devices.map(device => {
     const deviceLabel = Utils.t(content.questions.q7_devices.options[device], lang);
-    const isChecked = selected.includes(deviceLabel);
+    const isChecked = selected.includes(device);
     return `
             <label class="group relative flex cursor-pointer items-start justify-between rounded-xl border ${isChecked ? 'border-2 border-primary bg-primary/5' : 'border-slate-200 bg-white'} p-4 transition-all">
               <div class="flex items-start gap-3">
-                <input class="peer mt-0.5 h-5 w-5 shrink-0 rounded border-2 border-slate-300 text-primary focus:ring-primary bg-white" name="devices" type="checkbox" value="${deviceLabel}" ${isChecked ? 'checked' : ''}/>
+                <input class="peer mt-0.5 h-5 w-5 shrink-0 rounded border-2 border-slate-300 text-primary focus:ring-primary bg-white" name="devices" type="checkbox" value="${device}" ${isChecked ? 'checked' : ''}/>
                 <span class="font-semibold text-slate-900 text-sm leading-snug">${deviceLabel}</span>
               </div>
             </label>
@@ -351,51 +351,9 @@ function validateDateInput(dateStr) {
   const errorEl = document.getElementById('targetDateError');
   const inputEl = document.getElementById('targetDate');
 
-  const userData = Storage.getUserData();
-  const lang = userData.language || 'en';
-  const content = translations.questionnaire.questions.q5_target_date;
-
   if (!dateStr) {
     if (errorEl) errorEl.textContent = '';
     if (inputEl) inputEl.classList.remove('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
-    return false;
-  }
-
-  // Trim whitespace
-  dateStr = dateStr.trim();
-
-  // Check if user entered dd/mm/yyyy format (e.g. 12/12/2026)
-  // We check for: 1-2 digits, slash, 1-2 digits, slash, 4 digits
-  const ddMmYyyyRegex = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
-
-  if (ddMmYyyyRegex.test(dateStr)) {
-    if (errorEl) {
-      errorEl.textContent = Utils.t(content.errorDDMMYYYY, lang);
-      errorEl.className = 'text-xs font-medium mt-1 text-red-500 fade-in';
-    }
-    if (inputEl) inputEl.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
-    return false;
-  }
-
-  // Check generic slash count just in case other weird formats with multiple slashes
-  const slashCount = (dateStr.match(/\//g) || []).length;
-  if (slashCount > 1) {
-    if (errorEl) {
-      // Fallback to standard format error if it's not clearly dd/mm/yyyy but has too many slashes
-      errorEl.textContent = Utils.t(content.errorFormat, lang);
-      errorEl.className = 'text-xs font-medium mt-1 text-red-500 fade-in';
-    }
-    if (inputEl) inputEl.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
-    return false;
-  }
-
-  // Check if input is too long (MM/YYYY should be max 7 characters)
-  if (dateStr.length > 7) {
-    if (errorEl) {
-      errorEl.textContent = Utils.t(content.errorFormat, lang);
-      errorEl.className = 'text-xs font-medium mt-1 text-red-500 fade-in';
-    }
-    if (inputEl) inputEl.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
     return false;
   }
 

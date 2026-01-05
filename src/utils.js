@@ -96,13 +96,13 @@ const Utils = {
     determineDeviceGroup(devices) {
         if (!devices || devices.length === 0) return 'A';
 
-        // If user selected "Mobile/Tablet" OR "Both"
-        if (devices.includes('Mobile/Tablet') || devices.includes('Both')) {
+        // If user selected "mobile" OR "both" (keys)
+        if (devices.includes('mobile') || devices.includes('both')) {
             return 'A';
         }
 
-        // If user selected only "Laptop"
-        if (devices.includes('Laptop') && devices.length === 1) {
+        // If user selected only "laptop"
+        if (devices.includes('laptop') && devices.length === 1) {
             return 'B';
         }
 
