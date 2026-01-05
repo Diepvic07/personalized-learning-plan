@@ -15,7 +15,10 @@ const FIELD_IDS = {
     targetDate: "152926486",
     dailyTime: "492776784",     // Contains "0.75 (Required: 400h)"
     planDocLink: "63991647",    // The Critical Field for the User's Plan
-    email: "1439263172"
+    email: "1439263172",
+    name: "1409835656",         // Added Name Field
+    planId: "271858445",        // Added Plan ID Field
+    nativeLanguage: "1104628968" // Added Native Language Field
 };
 
 // MAPPING: Tag Name (in Doc) -> [List of possible Form IDs or Titles]
@@ -25,6 +28,64 @@ const TAG_MAP = {
     "TargetDate": [FIELD_IDS.targetDate, "Target Date"],
     "requiredHours": [FIELD_IDS.dailyTime, "Daily dedicated learning time"],
     "TotalHours": [FIELD_IDS.dailyTime] // duplicate just in case
+};
+
+// Plan Titles Mapping
+const PLAN_TITLES = {
+    1: "Beginner Communication Plan (Mobile-Optimized)",
+    2: "Intermediate Communication Plan (Mobile-Optimized)",
+    3: "Beginner Communication Plan (Laptop-Optimized)",
+    4: "Intermediate Communication Plan (Laptop-Optimized)",
+    5: "IELTS Preparation - Beginner Level (Mobile)",
+    6: "IELTS Preparation - Intermediate Level (Mobile)",
+    7: "IELTS Preparation - Beginner Level (Laptop)",
+    8: "IELTS Preparation - Intermediate Level (Laptop)",
+    9: "TOEIC Preparation - Beginner Level (Mobile)",
+    10: "TOEIC Preparation - Intermediate Level (Mobile)",
+    11: "TOEIC Preparation - Beginner Level (Laptop)",
+    12: "TOEIC Preparation - Intermediate Level (Laptop)"
+};
+
+const EMAIL_TEMPLATES = {
+    en: {
+        subject: "Your Personalized English Learning Plan is Ready! 🚀",
+        body: (name, link) => `Hi ${name},\n\n` +
+            `Congratulations on prioritizing your personal growth! 🌟 Your commitment to learning is the first step toward future success.\n\n` +
+            `### 📘 Your Personalized Plan\n` +
+            `Based on your responses, here is the study plan we've crafted for you:\n` +
+            `**[Link to Google Doc: Your Learning Plan](${link})**\n\n` +
+            `### 🤝 What's Next?\n` +
+            `To help you start strong, **an eJOY team member will contact you shortly** to guide you through the onboarding process and answer any questions.\n\n` +
+            `We're excited to support your journey.\n\n` +
+            `**Happy Learning!** 🎈\n` +
+            `*The eJOY Team*`
+    },
+    vi: {
+        subject: "Kế hoạch học tiếng Anh cá nhân hóa của bạn đã sẵn sàng! 🚀",
+        body: (name, link) => `Chào ${name},\n\n` +
+            `Chúc mừng bạn đã ưu tiên sự phát triển bản thân! 🌟 Cam kết học tập của bạn là bước đầu tiên hướng tới thành công trong tương lai.\n\n` +
+            `### 📘 Kế hoạch cá nhân hóa của bạn\n` +
+            `Dựa trên câu trả lời của bạn, đây là lộ trình học tập chúng tôi đã xây dựng cho bạn:\n` +
+            `**[Link Google Doc: Kế hoạch học tập của bạn](${link})**\n\n` +
+            `### 🤝 Bước tiếp theo là gì?\n` +
+            `Để giúp bạn khởi đầu thuận lợi, **một thành viên của đội ngũ eJOY sẽ sớm liên hệ với bạn** để hướng dẫn quy trình giới thiệu và giải đáp mọi thắc mắc.\n\n` +
+            `Chúng tôi rất hào hứng được đồng hành cùng bạn.\n\n` +
+            `**Chúc bạn học tốt!** 🎈\n` +
+            `*Đội ngũ eJOY*`
+    },
+    es: {
+        subject: "¡Tu plan de aprendizaje de inglés personalizado está listo! 🚀",
+        body: (name, link) => `Hola ${name},\n\n` +
+            `¡Felicitaciones por priorizar tu crecimiento personal! 🌟 Tu compromiso con el aprendizaje es el primer paso hacia el éxito futuro.\n\n` +
+            `### 📘 Tu plan personalizado\n` +
+            `Basado en tus respuestas, aquí tienes el plan de estudio que hemos elaborado para ti:\n` +
+            `**[Enlace a Google Doc: Tu plan de aprendizaje](${link})**\n\n` +
+            `### 🤝 ¿Qué sigue?\n` +
+            `Para ayudarte a comenzar con fuerza, **un miembro del equipo de eJOY te contactará en breve** para guiarte a través del proceso de incorporación y responder cualquier pregunta.\n\n` +
+            `Estamos emocionados de apoyar tu viaje.\n\n` +
+            `**¡Feliz aprendizaje!** 🎈\n` +
+            `*El equipo de eJOY*`
+    }
 };
 
 const EMAIL_KEYWORD = "email";
@@ -71,6 +132,9 @@ function onFormSubmit(e) {
         const formResponse = e.response;
         const itemResponses = formResponse.getItemResponses();
         let userEmail = formResponse.getRespondentEmail();
+        let userName = ""; // Initialize userName
+        let planId = "";   // Initialize planId
+        let nativeLanguage = "en"; // Default to English
 
         // 1. Prepare Data Object & Find Template
         const replacements = {};
@@ -100,6 +164,25 @@ function onFormSubmit(e) {
                     selectedTemplateId = extractedId;
                     console.log("Extracted Template ID:", selectedTemplateId);
                 }
+            }
+
+            // Extract Name
+            if (id === FIELD_IDS.name || title === "name" || title === "full name" || title.includes("full name")) {
+                userName = answer;
+            }
+
+            // Extract Plan ID
+            if (id === FIELD_IDS.planId || title === "planid" || title === "plan id") {
+                planId = answer;
+            }
+
+            // Extract Native Language
+            if (id === FIELD_IDS.nativeLanguage || title === "native language" || title === "language") {
+                // Map common responses to codes if necessary, or assume form sends codes/names
+                const lang = String(answer).toLowerCase();
+                if (lang.includes("vietnamese") || lang === "vi") nativeLanguage = "vi";
+                else if (lang.includes("spanish") || lang === "es") nativeLanguage = "es";
+                // else keep default "en"
             }
 
             // Match against TAG_MAP
@@ -142,9 +225,13 @@ function onFormSubmit(e) {
             }
         }
 
+        // Resolve Plan Title
+        const planTitle = (planId && PLAN_TITLES[planId]) ? PLAN_TITLES[planId] : "Personalized Learning Plan";
+
         // 4. Duplicate Template
         const targetFolder = DriveApp.getFolderById(DESTINATION_FOLDER_ID);
-        const newFileName = `Learning Plan - ${userEmail} - ${new Date().toISOString().split('T')[0]}`;
+        // Format: UserName - PlanTitle - YYYY-MM-DD
+        const newFileName = `${userName || 'User'} - ${planTitle} - ${new Date().toISOString().split('T')[0]}`;
         const newFile = templateFile.makeCopy(newFileName, targetFolder);
         const newDoc = DocumentApp.openById(newFile.getId());
 
@@ -171,8 +258,15 @@ function onFormSubmit(e) {
             newFile.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
         }
 
-        GmailApp.sendEmail(userEmail, "Your Personalized Learning Plan",
-            `Hello,\n\nYour English Learning Plan is ready.\n\nAccess it here: ${newFile.getUrl()}\n\nBest,\nEnglishPlan Team`);
+        // Prepare Email Body
+        // Select Template
+        const template = EMAIL_TEMPLATES[nativeLanguage] || EMAIL_TEMPLATES['en'];
+        const displayName = userName || (nativeLanguage === 'vi' ? 'bạn' : (nativeLanguage === 'es' ? 'usuario' : 'there'));
+
+        const emailSubject = template.subject;
+        const emailBody = template.body(displayName, newFile.getUrl());
+
+        GmailApp.sendEmail(userEmail, emailSubject, emailBody);
 
     } catch (err) {
         console.error("FATAL ERROR: " + err.toString());

@@ -403,7 +403,7 @@ const PLANS = {
         levels: ["A1", "A2"],
         deviceGroup: "A",
         doc_en: "1nf2zOr9_nw4Qadb2G7MlfAEXe1lCKYJROadg9RDgUCE",
-        doc_vn: "UFR2una3soX22P_BYrZK0QLJ42CTocMSEJkqkPB9U0c",
+        doc_vn: "1UFR2una3soX22P_BYrZK0QLJ42CTocMSEJkqkPB9U0c",
         phases_en: [
             {
                 name: "Phase 1",
@@ -723,8 +723,8 @@ const PLANS = {
         goal: "IELTS",
         levels: ["B1", "B2"],
         deviceGroup: "B",
-        doc_en: "igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
-        doc_vn: "aqcRfcqp_bCFt8Dkb0DSRZbJeIzHqIOD6SCi9fb4Fls",
+        doc_en: "1igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
+        doc_vn: "1aqcRfcqp_bCFt8Dkb0DSRZbJeIzHqIOD6SCi9fb4Fls",
         phases_en: [
             {
                 name: "Phase 1",
