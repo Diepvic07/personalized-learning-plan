@@ -178,7 +178,8 @@ const GoogleForms = {
                 name: userData.name || 'User',
                 email: userData.email,
                 planId: userData.planId || '',
-                nativeLanguage: userData.nativeLanguage || 'en'
+                nativeLanguage: userData.nativeLanguage || 'en',
+                templateId: userData.templateId || '' // <--- Added templateId parameter
             });
 
             const url = `${scriptUrl}?${params.toString()}`;
