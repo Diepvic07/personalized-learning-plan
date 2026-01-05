@@ -94,6 +94,7 @@ function doGet(e) {
         const planId = params.planId;
         const nativeLanguage = params.nativeLanguage || "en";
         const templateId = params.templateId || CONFIG.TEMPLATE_ID;
+        const requiredHours = params.requiredHours || "";
 
         // Validation
         if (!userEmail) {
@@ -132,6 +133,8 @@ function doGet(e) {
         body.replaceText("{{Name}}", userName);
         body.replaceText("{{Date}}", today);
         body.replaceText("{{PlanTitle}}", planTitle);
+        body.replaceText("{{requiredHours}}", requiredHours + "h"); // Add 'h' suffix if needed
+        body.replaceText("{{TotalHours}}", requiredHours + "h"); // Handle legacy tag
         // Add more replacements if your template uses them
 
         newDoc.saveAndClose();

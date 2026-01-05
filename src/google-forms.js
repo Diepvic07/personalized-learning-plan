@@ -179,7 +179,8 @@ const GoogleForms = {
                 email: userData.email,
                 planId: userData.planId || '',
                 nativeLanguage: userData.nativeLanguage || 'en',
-                templateId: userData.templateId || '' // Pass templateId
+                templateId: userData.templateId || '',
+                requiredHours: userData.requiredHours || '' // Pass requiredHours
             });
 
             const url = `${scriptUrl}?${params.toString()}`;
