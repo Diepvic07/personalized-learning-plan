@@ -116,10 +116,16 @@ window.handleEmailFormSubmit = async function (event) {
   let planDocLink = '';
   let firstLessonLink = '';
 
+  // Better language detection for Doc selection
+  // If UI language is English but Native is Vietnamese, prefer Vietnamese doc
+  const nativeLang = (contactData.nativeLanguage || userData.nativeLanguage || '').toLowerCase();
+  const isVietnamese = nativeLang.includes('vietnamese') || nativeLang.includes('tiếng việt') || nativeLang === 'vi' || lang === 'vi' || lang === 'vn';
+  const docLang = isVietnamese ? 'vi' : (lang || 'en');
+
   if (planId !== 'no-match' && PLANS && PLANS[planId]) {
     const plan = PLANS[planId];
     // Get the appropriate doc ID based on language
-    const docId = (lang === 'vn' || lang === 'vi') ? plan.doc_vn : plan.doc_en;
+    const docId = (docLang === 'vi') ? plan.doc_vn : plan.doc_en;
     if (docId) {
       planDocLink = `https://docs.google.com/document/d/${docId}/edit`;
     }
@@ -137,6 +143,10 @@ window.handleEmailFormSubmit = async function (event) {
   } else {
     firstLessonLink = 'https://ejo.bz/first-lesson-1';
   }
+
+  // Calculate Feasibility / Required Hours for Backend
+  const feasibility = Utils.calculateFeasibility(formData);
+  const requiredHours = Math.round(feasibility.details.requiredHours || 0);
 
   // Generate suggested document name: "UserName - PlanTitle - Date"
   let suggestedDocName = '';
@@ -156,13 +166,18 @@ window.handleEmailFormSubmit = async function (event) {
   console.log('[NamingConvention] Generated:', suggestedDocName);
 
   // Prepare complete submission data
+  // We append requiredHours to dailyTime to ensure it passes to backend placeholders if needed
+  // We also ensure targetDate is robust
   const submissionData = {
     ...userData.formData,
     ...contactData,
     nativeLanguage: userData.nativeLanguage,
     planId: planId,
     planDocLink: planDocLink,
-    firstLessonLink: firstLessonLink
+    firstLessonLink: firstLessonLink,
+    // Add computed fields if backend needs them (often passed as extra params or appended)
+    dailyTime: `${userData.formData.dailyTime} (Required: ${requiredHours}h)`,
+    requiredHours: requiredHours // In case we add a mapping later or use it in GoogleForms extension
   };
 
   // Submit to Google Forms
