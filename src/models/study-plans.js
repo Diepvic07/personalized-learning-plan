@@ -14,8 +14,8 @@ const PLANS = {
         goal: "Communication",
         levels: ["A1", "A2"],
         deviceGroup: "A",
-        doc_en: "1EnxU_NvKJ8zQmZP7YFh3xK2Lw9R4VsT3",
-        doc_vn: "1FpyVOxLKm9ArZqN8XkGi4yL10S5WuUc",
+        doc_en: "1sPrZPpkUT8fiPxLAYT9R4biD7wkw87EBP36ssfeBlR0",
+        doc_vn: "124lVkO8ZVaWRXLcVQSxOO5khkfohLKNJCg0T95UNudk",
         phases: [
             {
                 name: "Foundation Building",
@@ -52,8 +52,8 @@ const PLANS = {
         goal: "Communication",
         levels: ["B1", "B2"],
         deviceGroup: "A",
-        doc_en: "1GqzWPyMKnAsSrOpN9ZlHjXm2QUOTE_1T6VxZy",
-        doc_vn: "1HråXQzNLoBtTsPqO0AmIkYn3RquoteV7WyAz",
+        doc_en: "1OnYBePNtvJ7AfNm9zpNb7qMABs0SYHQi7499e2ESgb4",
+        doc_vn: "1KyrV1XUIQ44G7ukdL2sCD9EvEpphgc-yaV_5IHkmdM0",
         phases: [
             {
                 name: "Fluency Development",
@@ -90,8 +90,8 @@ const PLANS = {
         goal: "Communication",
         levels: ["A1", "A2"],
         deviceGroup: "B",
-        doc_en: "1IscYRaNMpCuUvTqPr1BnJlZo4SxW8XbB",
-        doc_vn: "1JtdZSbONqDvVwUsQs2CoKmAp5TyX9YcC",
+        doc_en: "13vLqulrYAiot_-MBNHJ_LKa-sXhshoHWPeguCUDPTJI",
+        doc_vn: "1dUGz_EDstz7IxJGqMKfAkTxlQAzh_6hnFDwYPra3Qpg",
         phases: [
             {
                 name: "Foundation Building",
@@ -128,8 +128,8 @@ const PLANS = {
         goal: "Communication",
         levels: ["B1", "B2"],
         deviceGroup: "B",
-        doc_en: "1KueATcPOrEvXwYtRt3DpLnBq6UzY0AdD",
-        doc_vn: "1LvfBUdQPsFwYxZuSu4EqMoCr7VaZ1BeE",
+        doc_en: "1yWlKVjUilUnJuqe4SeTAX-LXnGUIdY9cqb4hDCDxs2g",
+        doc_vn: "1jL8qCWKHB85oP1N8LXWAKW4Iz4KaEzA5J4E0_tcKWy0",
         phases: [
             {
                 name: "Advanced Communication",
@@ -170,8 +170,8 @@ const PLANS = {
         goal: "IELTS",
         levels: ["A1", "A2"],
         deviceGroup: "A",
-        doc_en: "1MwgCVeRQtGxZyBvTv5FrNpDs8WbA2CfF",
-        doc_vn: "1NxhDWfSRuHyAzCwUw6GsOqEt9XcB3DgG",
+        doc_en: "1nf2zOr9_nw4Qadb2G7MlfAEXe1lCKYJROadg9RDgUCE",
+        doc_vn: "UFR2una3soX22P_BYrZK0QLJ42CTocMSEJkqkPB9U0c",
         phases: [
             {
                 name: "IELTS Foundations",
@@ -208,8 +208,8 @@ const PLANS = {
         goal: "IELTS",
         levels: ["B1", "B2"],
         deviceGroup: "A",
-        doc_en: "1OyiEXgTSvIzBaDxVx7HtPrFu0YdC4EhH",
-        doc_vn: "1PzjFYhUTwJAaCbEyWy8IuQsGv1ZeD5iI",
+        doc_en: "1tIz06zToSWlNtZbiQTqyvdqvAs1eGo7tu8j8a79Et3k",
+        doc_vn: "1V-lPU9gsZpV1Dx0S7LDV_uVQ8fOIeoKrWrNvs8KTriA",
         phases: [
             {
                 name: "Intensive Skill Training",
@@ -246,8 +246,8 @@ const PLANS = {
         goal: "IELTS",
         levels: ["A1", "A2"],
         deviceGroup: "B",
-        doc_en: "1QakGZiVUxKBbDbFyZz9JvRtHw2AfE6jJ",
-        doc_vn: "1RblHAjWVyLCcEcGzAa0KwSuIx3BgF7kK",
+        doc_en: "1igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
+        doc_vn: "1Das9kJiZToWVXxf1Pn79qfCWf9A6GDwJyGBiIZhe42Y",
         phases: [
             {
                 name: "Comprehensive Foundation",
@@ -284,8 +284,8 @@ const PLANS = {
         goal: "IELTS",
         levels: ["B1", "B2"],
         deviceGroup: "B",
-        doc_en: "1ScmIBkXWzMDcFdHzBa1LxTvJy4ChG8lL",
-        doc_vn: "1TdnJClYXaNCdGEIaCb2MyUwKz5DiH9mM",
+        doc_en: "igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
+        doc_vn: "aqcRfcqp_bCFt8Dkb0DSRZbJeIzHqIOD6SCi9fb4Fls",
         phases: [
             {
                 name: "Advanced Preparation",
@@ -326,8 +326,8 @@ const PLANS = {
         goal: "TOEIC",
         levels: ["A1", "A2"],
         deviceGroup: "A",
-        doc_en: "1UeoKDmZYbOEfHfJzCc3NzVxLa6EjI0nN",
-        doc_vn: "1VfpLEnAZcPFgIgKaDd4OaWyMb7FkJ1oO",
+        doc_en: "1Gg0XUCIxWbeZ1z9gnS-pF5M01cz0_r-ae0liMoZchU8",
+        doc_vn: "1lpq_9WXQIzhIwlGchlNXMVbcNdZttd1VWXIyb0qNV4k",
         phases: [
             {
                 name: "TOEIC Basics",
@@ -364,8 +364,8 @@ const PLANS = {
         goal: "TOEIC",
         levels: ["B1", "B2"],
         deviceGroup: "A",
-        doc_en: "1WgqMFoBAdQHhJhLbEe5PbXzNc8GlK2pP",
-        doc_vn: "1XhrNGpCBeRIiKiMcFf6QcYaOd9HmL3qQ",
+        doc_en: "1II4WRqn9jbx4lPrAtuOaQfh6xpEc4FsTmh_QQBxflAU",
+        doc_vn: "1LPpcZrEaqxlUlbAsITPLjnfLxjs4Lb9SAe7soaFnNz4",
         phases: [
             {
                 name: "Advanced Test Skills",
@@ -402,8 +402,8 @@ const PLANS = {
         goal: "TOEIC",
         levels: ["A1", "A2"],
         deviceGroup: "B",
-        doc_en: "1YisOHqDCfSJjLjNdGg7RdZaPe0InM4rR",
-        doc_vn: "1ZjtPIrEDgTKkMkOeHh8SeAbQf1JoN5sS",
+        doc_en: "1japMsSpJekFAqwSZZ3n-YApTFXH58_2h7D9nC0HkcZE",
+        doc_vn: "1_oQNvib44V9SfQgf7Z_LlC-p0u8IYv7UrLNs8oae56Y",
         phases: [
             {
                 name: "Structured Learning",
@@ -440,8 +440,8 @@ const PLANS = {
         goal: "TOEIC",
         levels: ["B1", "B2"],
         deviceGroup: "B",
-        doc_en: "1AkuQJsFEhULlNlPfIi9TfBcRg2KpO6tT",
-        doc_vn: "1BluRKtGFiVMmOmQgJj0UgCdSh3LqP7uU",
+        doc_en: "1nMpQL9xaS2MViQCs6Ygg6mp9ryBCDNgriYoCgzIGnew",
+        doc_vn: "1Swai0tuB5WB2C94pJPM8fBQ928B15JHZ82x0jo51KNY",
         phases: [
             {
                 name: "Intensive Preparation",
@@ -481,13 +481,16 @@ const PLANS = {
  */
 function determinePersona(userData) {
     const { goal, currentLevel, deviceGroup } = userData;
+    // Normalize inputs to handle case/whitespace differences
+    const normalizedGoal = goal ? goal.trim().toUpperCase() : '';
+    const normalizedLevel = currentLevel ? currentLevel.trim().toUpperCase() : '';
 
     // Normalize levels for comparison
-    const isBeginnerLevel = ['A1', 'A2'].includes(currentLevel);
-    const isIntermediateLevel = ['B1', 'B2'].includes(currentLevel);
+    const isBeginnerLevel = ['A1', 'A2'].includes(normalizedLevel);
+    const isIntermediateLevel = ['B1', 'B2'].includes(normalizedLevel);
 
     // COMMUNICATION PLANS (1-4)
-    if (goal === 'Communication') {
+    if (normalizedGoal === 'COMMUNICATION') {
         if (isBeginnerLevel && deviceGroup === 'A') return 1;
         if (isIntermediateLevel && deviceGroup === 'A') return 2;
         if (isBeginnerLevel && deviceGroup === 'B') return 3;
@@ -495,7 +498,7 @@ function determinePersona(userData) {
     }
 
     // IELTS PLANS (5-8)
-    if (goal === 'IELTS') {
+    if (normalizedGoal === 'IELTS') {
         if (isBeginnerLevel && deviceGroup === 'A') return 5;
         if (isIntermediateLevel && deviceGroup === 'A') return 6;
         if (isBeginnerLevel && deviceGroup === 'B') return 7;
@@ -503,7 +506,7 @@ function determinePersona(userData) {
     }
 
     // TOEIC PLANS (9-12)
-    if (goal === 'TOEIC') {
+    if (normalizedGoal === 'TOEIC') {
         if (isBeginnerLevel && deviceGroup === 'A') return 9;
         if (isIntermediateLevel && deviceGroup === 'A') return 10;
         if (isBeginnerLevel && deviceGroup === 'B') return 11;
