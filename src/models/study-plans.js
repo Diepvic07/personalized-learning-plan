@@ -16,32 +16,111 @@ const PLANS = {
         deviceGroup: "A",
         doc_en: "1sPrZPpkUT8fiPxLAYT9R4biD7wkw87EBP36ssfeBlR0",
         doc_vn: "124lVkO8ZVaWRXLcVQSxOO5khkfohLKNJCg0T95UNudk",
-        phases: [
+        phases_en: [
             {
-                name: "Foundation Building",
+                name: "Phase 1",
                 tasks: [
-                    "Master basic greetings and introductions",
-                    "Learn essential vocabulary for daily situations",
-                    "Practice simple sentence structures",
-                    "Build confidence with mobile flashcard app"
+                    "Study 1 lesson in Basic - Every English 1 course.",
+                    "Listen to an English video",
+                    "Review saved vocab",
+                    "Practice speaking 1 AI scenario."
                 ]
             },
             {
-                name: "Conversation Practice",
+                name: "Phase 2",
                 tasks: [
-                    "AI roleplay scenarios for common situations",
-                    "Listen to short podcast episodes on-the-go",
-                    "Practice speaking with voice recording",
-                    "Join mobile-based conversation groups"
+                    "Certificates for Basic Everyday English course 1",
+                    "Certificates for Basic Everyday English course 2",
+                    "Certificates for Basic Everyday English course 3",
+                    "Master 500 words",
+                    "Complete Listening Comprehension of 203 videos in English communication video collection.",
+                    "Complete 100 basic scenarios with AI in the English learners world."
                 ]
             },
             {
-                name: "Real-World Application",
+                name: "Phase 3",
                 tasks: [
-                    "Order food in English using mobile apps",
-                    "Chat with language exchange partners",
-                    "Watch short video clips with subtitles",
-                    "Apply learned phrases in daily life"
+                    "Certificates for Intermediate Everyday English course 1",
+                    "Certificates for Intermediate Everyday English course 2",
+                    "Certificates for Intermediate Everyday English course 3",
+                    "Complete Listening Comprehension of the Ted Talks in brief video collection",
+                    "Complete Listening Comprehension of the Ted Talk video collection",
+                    "Complete Listening Comprehension of the TED-ED video collection",
+                    "Master 500 words",
+                    "Complete 100 scenarios with AI in your personalized world.",
+                    "Complete 1 professional course on Coursera/Udemy, etc."
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài trong khóa Basic - Every English 1.",
+                    "Nghe 1 video tiếng Anh",
+                    "Ôn tập từ vựng đã lưu",
+                    "Luyện nói 1 tình huống với AI."
+                ]
+            },
+            {
+                name: "Giai đoạn 2",
+                tasks: [
+                    "Chứng nhận hoàn thành khóa Basic Everyday English 1",
+                    "Chứng nhận hoàn thành khóa Basic Everyday English 2",
+                    "Chứng nhận hoàn thành khóa Basic Everyday English 3",
+                    "Nắm vững 500 từ vựng",
+                    "Hoàn thành Luyện nghe hiểu 203 video trong bộ video giao tiếp tiếng Anh.",
+                    "Hoàn thành 100 tình huống cơ bản với AI trong thế giới người học tiếng Anh."
+                ]
+            },
+            {
+                name: "Giai đoạn 3",
+                tasks: [
+                    "Chứng nhận hoàn thành khóa Intermediate Everyday English 1",
+                    "Chứng nhận hoàn thành khóa Intermediate Everyday English 2",
+                    "Chứng nhận hoàn thành khóa Intermediate Everyday English 3",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talks in brief",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
+                    "Hoàn thành Luyện nghe hiểu bộ video TED-ED",
+                    "Nắm vững 500 từ vựng",
+                    "Hoàn thành 100 tình huống với AI trong thế giới được cá nhân hóa của bạn.",
+                    "Hoàn thành 1 khóa chuyên môn trên Coursera/Udemy, v.v."
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección en el curso Basic - Every English 1.",
+                    "Escucha un video en inglés",
+                    "Repasa el vocabulario guardado",
+                    "Practica hablar 1 escenario con IA."
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Certificados del curso Basic Everyday English 1",
+                    "Certificados del curso Basic Everyday English 2",
+                    "Certificados del curso Basic Everyday English 3",
+                    "Domina 500 palabras",
+                    "Completa la Comprensión Auditiva de 203 videos en la colección de comunicación en inglés.",
+                    "Completa 100 escenarios básicos con IA en el mundo de estudiantes de inglés."
+                ]
+            },
+            {
+                name: "Fase 3",
+                tasks: [
+                    "Certificados del curso Intermediate Everyday English 1",
+                    "Certificados del curso Intermediate Everyday English 2",
+                    "Certificados del curso Intermediate Everyday English 3",
+                    "Completa la Comprensión Auditiva de la colección Ted Talks in brief",
+                    "Completa la Comprensión Auditiva de la colección Ted Talk",
+                    "Completa la Comprensión Auditiva de la colección TED-ED",
+                    "Domina 500 palabras",
+                    "Completa 100 escenarios con IA en tu mundo personalizado.",
+                    "Completa 1 curso profesional en Coursera/Udemy, etc."
                 ]
             }
         ]
@@ -54,32 +133,78 @@ const PLANS = {
         deviceGroup: "A",
         doc_en: "1OnYBePNtvJ7AfNm9zpNb7qMABs0SYHQi7499e2ESgb4",
         doc_vn: "1KyrV1XUIQ44G7ukdL2sCD9EvEpphgc-yaV_5IHkmdM0",
-        phases: [
+        phases_en: [
             {
-                name: "Fluency Development",
+                name: "Phase 1",
                 tasks: [
-                    "Engage in complex AI conversations",
-                    "Listen to podcasts at natural speed",
-                    "Practice idiomatic expressions",
-                    "Expand vocabulary through mobile reading"
+                    "Study 1 lesson in Basic - Every English 1 course.",
+                    "Listen to an English video",
+                    "Review saved vocab",
+                    "Practice speaking 1 AI scenario."
                 ]
             },
             {
-                name: "Professional Skills",
+                name: "Phase 2",
                 tasks: [
-                    "Business communication scenarios",
-                    "Email writing practice on mobile",
-                    "Presentation skills with video feedback",
-                    "Networking conversations"
+                    "Certificates for Intermediate Everyday English course 1",
+                    "Certificates for Intermediate Everyday English course 2",
+                    "Certificates for Intermediate Everyday English course 3",
+                    "Complete Listening Comprehension of the Ted Talks in brief video collection",
+                    "Complete Listening Comprehension of the Ted Talk video collection",
+                    "Complete Listening Comprehension of the TED-ED video collection",
+                    "Master 500 words",
+                    "Complete 100 scenarios with AI in your personalized world.",
+                    "Complete 1 professional course on Coursera/Udemy, etc."
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài trong khóa Basic - Every English 1.",
+                    "Nghe 1 video tiếng Anh",
+                    "Ôn tập từ vựng đã lưu",
+                    "Luyện nói 1 tình huống với AI."
                 ]
             },
             {
-                name: "Cultural Competence",
+                name: "Giai đoạn 2",
                 tasks: [
-                    "Understand cultural nuances in communication",
-                    "Watch authentic content (movies, shows)",
-                    "Participate in online discussions",
-                    "Maintain daily English routine"
+                    "Chứng nhận hoàn thành khóa Intermediate Everyday English 1",
+                    "Chứng nhận hoàn thành khóa Intermediate Everyday English 2",
+                    "Chứng nhận hoàn thành khóa Intermediate Everyday English 3",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talks in brief",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
+                    "Hoàn thành Luyện nghe hiểu bộ video TED-ED",
+                    "Nắm vững 500 từ vựng",
+                    "Hoàn thành 100 tình huống với AI trong thế giới được cá nhân hóa của bạn.",
+                    "Hoàn thành 1 khóa chuyên môn trên Coursera/Udemy, v.v."
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección en el curso Basic - Every English 1.",
+                    "Escucha un video en inglés",
+                    "Repasa el vocabulario guardado",
+                    "Practica hablar 1 escenario con IA."
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Certificados del curso Intermediate Everyday English 1",
+                    "Certificados del curso Intermediate Everyday English 2",
+                    "Certificados del curso Intermediate Everyday English 3",
+                    "Completa la Comprensión Auditiva de la colección Ted Talks in brief",
+                    "Completa la Comprensión Auditiva de la colección Ted Talk",
+                    "Completa la Comprensión Auditiva de la colección TED-ED",
+                    "Domina 500 palabras",
+                    "Completa 100 escenarios con IA en tu mundo personalizado.",
+                    "Completa 1 curso profesional en Coursera/Udemy, etc."
                 ]
             }
         ]
@@ -92,32 +217,99 @@ const PLANS = {
         deviceGroup: "B",
         doc_en: "13vLqulrYAiot_-MBNHJ_LKa-sXhshoHWPeguCUDPTJI",
         doc_vn: "1dUGz_EDstz7IxJGqMKfAkTxlQAzh_6hnFDwYPra3Qpg",
-        phases: [
+        phases_en: [
             {
-                name: "Foundation Building",
+                name: "Phase 1",
                 tasks: [
-                    "Complete interactive online courses",
-                    "Use typing practice for vocabulary building",
-                    "Watch structured video lessons",
-                    "Practice with desktop language software"
+                    "Study 1 EPIC lesson beginner",
+                    "Listen to an English video",
+                    "Review saved vocab",
+                    "Practice speaking 1 AI scenario."
                 ]
             },
             {
-                name: "Structured Learning",
+                name: "Phase 2",
                 tasks: [
-                    "Work through comprehensive textbook materials",
-                    "Practice grammar with online exercises",
-                    "Join live virtual classes",
-                    "Complete written assignments"
+                    "Complete 100 EPIC lessons for beginners",
+                    "Complete Listening Comprehension of 203 videos in English communication video collection.",
+                    "Master 500 words",
+                    "Complete 100 basic scenarios with AI in the English learners world."
                 ]
             },
             {
-                name: "Application Practice",
+                name: "Phase 3",
                 tasks: [
-                    "Video call practice sessions",
-                    "Write emails and short essays",
-                    "Participate in online forums",
-                    "Create presentations in English"
+                    "Complete 100 EPIC lessons for intermediates",
+                    "Complete Listening Comprehension of the Ted Talks in brief video collection",
+                    "Complete Listening Comprehension of the Ted Talk video collection",
+                    "Complete Listening Comprehension of the TED-ED video collection",
+                    "Master 500 words",
+                    "Complete 100 scenarios with AI in your personalized world.",
+                    "Complete 1 professional course on Coursera/Udemy, etc."
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài EPIC cho người mới bắt đầu",
+                    "Nghe 1 video tiếng Anh",
+                    "Ôn tập từ vựng đã lưu",
+                    "Luyện nói 1 tình huống với AI."
+                ]
+            },
+            {
+                name: "Giai đoạn 2",
+                tasks: [
+                    "Hoàn thành 100 bài học EPIC cho người mới bắt đầu",
+                    "Hoàn thành Luyện nghe hiểu 203 video trong bộ video giao tiếp tiếng Anh.",
+                    "Nắm vững 500 từ vựng",
+                    "Hoàn thành 100 tình huống cơ bản với AI trong thế giới người học tiếng Anh."
+                ]
+            },
+            {
+                name: "Giai đoạn 3",
+                tasks: [
+                    "Hoàn thành 100 bài học EPIC cho trình độ trung cấp",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talks in brief",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
+                    "Hoàn thành Luyện nghe hiểu bộ video TED-ED",
+                    "Nắm vững 500 từ vựng",
+                    "Hoàn thành 100 tình huống với AI trong thế giới được cá nhân hóa của bạn.",
+                    "Hoàn thành 1 khóa chuyên môn trên Coursera/Udemy, v.v."
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección EPIC para principiantes",
+                    "Escucha un video en inglés",
+                    "Repasa el vocabulario guardado",
+                    "Practica hablar 1 escenario con IA."
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Completa 100 lecciones EPIC para principiantes",
+                    "Completa la Comprensión Auditiva de 203 videos en la colección de comunicación en inglés.",
+                    "Domina 500 palabras",
+                    "Completa 100 escenarios básicos con IA en el mundo de estudiantes de inglés."
+                ]
+            },
+            {
+                name: "Fase 3",
+                tasks: [
+                    "Completa 100 lecciones EPIC para intermedios",
+                    "Completa la Comprensión Auditiva de la colección Ted Talks in brief",
+                    "Completa la Comprensión Auditiva de la colección Ted Talk",
+                    "Completa la Comprensión Auditiva de la colección TED-ED",
+                    "Domina 500 palabras",
+                    "Completa 100 escenarios con IA en tu mundo personalizado.",
+                    "Completa 1 curso profesional en Coursera/Udemy, etc."
                 ]
             }
         ]
@@ -129,33 +321,73 @@ const PLANS = {
         levels: ["B1", "B2"],
         deviceGroup: "B",
         doc_en: "1yWlKVjUilUnJuqe4SeTAX-LXnGUIdY9cqb4hDCDxs2g",
-        doc_vn: "1jL8qCWKHB85oP1N8LXWAKW4Iz4KaEzA5J4E0_tcKWy0",
-        phases: [
+        doc_vn: "1yWlKVjUilUnJuqe4SeTAX-LXnGUIdY9cqb4hDCDxs2g",
+        phases_en: [
             {
-                name: "Advanced Communication",
+                name: "Phase 1",
                 tasks: [
-                    "Participate in advanced online courses",
-                    "Write long-form content (blogs, articles)",
-                    "Join virtual debate clubs",
-                    "Create multimedia presentations"
+                    "Study 1 lesson in Basic - Every English 1 course.",
+                    "Listen to an English video",
+                    "Review saved vocab",
+                    "Practice speaking 1 AI scenario."
                 ]
             },
             {
-                name: "Professional Development",
+                name: "Phase 2",
                 tasks: [
-                    "Advanced business writing",
-                    "Technical documentation practice",
-                    "Lead online meetings in English",
-                    "Develop industry-specific vocabulary"
+                    "Complete 100 EPIC lessons for intermediates",
+                    "Master 500 IELTS words",
+                    "Complete deep practice of 30 videos in Ted Talks in brief video collection.",
+                    "Complete deep practice of 43 videos in Ted Talks video collection.",
+                    "Complete deep practice of 356 videos in TED-ED video collection.",
+                    "Complete 100 scenarios with AI in your personalized world.",
+                    "Complete 1 professional course on Coursera/Udemy, etc."
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài trong khóa Basic - Every English 1.",
+                    "Nghe 1 video tiếng Anh",
+                    "Ôn tập từ vựng đã lưu",
+                    "Luyện nói 1 tình huống với AI."
                 ]
             },
             {
-                name: "Mastery & Integration",
+                name: "Giai đoạn 2",
                 tasks: [
-                    "Contribute to English-language projects",
-                    "Mentor beginner learners online",
-                    "Consume complex academic content",
-                    "Build sustainable learning habits"
+                    "Hoàn thành 100 bài học EPIC cho trình độ trung cấp",
+                    "Nắm vững 500 từ vựng IELTS",
+                    "Hoàn thành luyện tập sâu 30 video trong bộ video Ted Talks in brief.",
+                    "Hoàn thành luyện tập sâu 43 video trong bộ video Ted Talks.",
+                    "Hoàn thành luyện tập sâu 356 video trong bộ video TED-ED.",
+                    "Hoàn thành 100 tình huống với AI trong thế giới được cá nhân hóa của bạn.",
+                    "Hoàn thành 1 khóa chuyên môn trên Coursera/Udemy, v.v."
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección en el curso Basic - Every English 1.",
+                    "Escucha un video en inglés",
+                    "Repasa el vocabulario guardado",
+                    "Practica hablar 1 escenario con IA."
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Completa 100 lecciones EPIC para intermedios",
+                    "Domina 500 palabras de IELTS",
+                    "Completa práctica profunda de 30 videos en la colección Ted Talks in brief.",
+                    "Completa práctica profunda de 43 videos en la colección Ted Talks.",
+                    "Completa práctica profunda de 356 videos en la colección TED-ED.",
+                    "Completa 100 escenarios con IA en tu mundo personalizado.",
+                    "Completa 1 curso profesional en Coursera/Udemy, etc."
                 ]
             }
         ]
@@ -172,32 +404,117 @@ const PLANS = {
         deviceGroup: "A",
         doc_en: "1nf2zOr9_nw4Qadb2G7MlfAEXe1lCKYJROadg9RDgUCE",
         doc_vn: "UFR2una3soX22P_BYrZK0QLJ42CTocMSEJkqkPB9U0c",
-        phases: [
+        phases_en: [
             {
-                name: "IELTS Foundations",
+                name: "Phase 1",
                 tasks: [
-                    "Understand IELTS test format",
-                    "Build academic vocabulary",
-                    "Practice basic reading with IELTS-style passages",
-                    "Listen to IELTS practice audio on mobile"
+                    "Study 1 lesson in Basic - Every English 1 course",
+                    "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
+                    "Learn IELTS vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Skill Development",
+                name: "Phase 2",
                 tasks: [
-                    "Writing Task 1: Describe graphs/charts",
-                    "Writing Task 2: Essay structure basics",
-                    "Speaking Part 1: Personal questions",
-                    "Reading strategies for beginners"
+                    "Achieve completion certificate for Basic - Every English 1 course.",
+                    "Achieve completion certificate for Basic - Every English 2 course.",
+                    "Achieve completion certificate for Basic - Every English 3 course.",
+                    "Complete 200h English communication - high beginner video collection.",
+                    "Certificate for 100 speaking practice scenarios with AI in English learners world.",
+                    "Complete Ted Talks in brief video collection",
+                    "Complete IELTS Basic video collection",
+                    "Master 300 IELTS words"
                 ]
             },
             {
-                name: "Practice & Review",
+                name: "Phase 3",
                 tasks: [
-                    "Take mobile-based practice tests",
-                    "Review and analyze mistakes",
-                    "Build test-taking stamina",
-                    "Track progress towards target score"
+                    "Achieve completion certificate for Intermediate - Every English 1 course.",
+                    "Achieve completion certificate for Intermediate - Every English 2 course.",
+                    "Achieve completion certificate for Intermediate - Every English 3 course.",
+                    "Complete Listening Comprehension of the Ted Talk video collection",
+                    "Complete Listening Comprehension of the TED-ED video collection",
+                    "Complete Listening Comprehension of the IELTS for Preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Master 300 IELTS words",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài trong khóa Basic - Every English 1",
+                    "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
+                    "Học từ vựng IELTS",
+                    "Luyện nói 1 tình huống với AI"
+                ]
+            },
+            {
+                name: "Giai đoạn 2",
+                tasks: [
+                    "Đạt chứng nhận hoàn thành khóa Basic - Every English 1.",
+                    "Đạt chứng nhận hoàn thành khóa Basic - Every English 2.",
+                    "Đạt chứng nhận hoàn thành khóa Basic - Every English 3.",
+                    "Hoàn thành bộ video 200h giao tiếp tiếng Anh - sơ cấp cao.",
+                    "Chứng nhận hoàn thành 100 tình huống luyện nói bài với AI.",
+                    "Hoàn thành bộ video Ted Talks in brief",
+                    "Hoàn thành bộ video IELTS Basic",
+                    "Nắm vững 300 từ vựng IELTS"
+                ]
+            },
+            {
+                name: "Giai đoạn 3",
+                tasks: [
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 3.",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
+                    "Hoàn thành Luyện nghe hiểu bộ video TED-ED",
+                    "Hoàn thành Luyện nghe hiểu bộ video IELTS for Preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Nắm vững 300 từ vựng IELTS",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección en el curso Basic - Every English 1",
+                    "Escucha 1 video de YouTube o de la colección 200h English communication",
+                    "Aprende vocabulario IELTS",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Obtener certificado del curso Basic - Every English 1.",
+                    "Obtener certificado del curso Basic - Every English 2.",
+                    "Obtener certificado del curso Basic - Every English 3.",
+                    "Completar la colección de videos 200h English communication - principiante alto.",
+                    "Certificado por 100 escenarios de práctica oral con IA.",
+                    "Completar la colección de videos Ted Talks in brief",
+                    "Completar la colección de videos IELTS Basic",
+                    "Dominar 300 palabras de IELTS"
+                ]
+            },
+            {
+                name: "Fase 3",
+                tasks: [
+                    "Obtener certificado del curso Intermediate - Every English 1.",
+                    "Obtener certificado del curso Intermediate - Every English 2.",
+                    "Obtener certificado del curso Intermediate - Every English 3.",
+                    "Completar la Comprensión Auditiva de la colección Ted Talk",
+                    "Completar la Comprensión Auditiva de la colección TED-ED",
+                    "Completar la Comprensión Auditiva de la colección IELTS for Preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Dominar 300 palabras de IELTS",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2"
                 ]
             }
         ]
@@ -210,32 +527,81 @@ const PLANS = {
         deviceGroup: "A",
         doc_en: "1tIz06zToSWlNtZbiQTqyvdqvAs1eGo7tu8j8a79Et3k",
         doc_vn: "1V-lPU9gsZpV1Dx0S7LDV_uVQ8fOIeoKrWrNvs8KTriA",
-        phases: [
+        phases_en: [
             {
-                name: "Intensive Skill Training",
+                name: "Phase 1",
                 tasks: [
-                    "Advanced reading comprehension techniques",
-                    "Complex essay writing (Task 2)",
-                    "Speaking Part 2 & 3: Extended discourse",
-                    "Listening for detailed information"
+                    "Study 1 lesson in Intermediate - Every English 1 course",
+                    "Listen to 1 YouTube video or a video in the Ted Talks in brief",
+                    "Learn IELTS vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Test Strategy Mastery",
+                name: "Phase 2",
                 tasks: [
-                    "Time management for each section",
-                    "Common pitfalls and how to avoid them",
-                    "Vocabulary for all IELTS topics",
-                    "Practice with authentic IELTS materials"
+                    "Achieve completion certificate for Intermediate - Every English 1 course.",
+                    "Achieve completion certificate for Intermediate - Every English 2 course.",
+                    "Achieve completion certificate for Intermediate - Every English 3 course.",
+                    "Complete Listening Comprehension of the Ted Talks in brief video collection",
+                    "Complete Listening Comprehension of the Ted Talk video collection",
+                    "Complete Listening Comprehension of the TED-ED video collection",
+                    "Complete Listening Comprehension of the IELTS for Preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Master 600 IELTS words",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài trong khóa Intermediate - Every English 1",
+                    "Nghe 1 video YouTube hoặc video trong bộ Ted Talks in brief",
+                    "Học từ vựng IELTS",
+                    "Luyện nói 1 tình huống với AI"
                 ]
             },
             {
-                name: "Score Optimization",
+                name: "Giai đoạn 2",
                 tasks: [
-                    "Full-length practice tests (mobile app)",
-                    "Personalized feedback on weaknesses",
-                    "Band score improvement techniques",
-                    "Final preparation and confidence building"
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 3.",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talks in brief",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
+                    "Hoàn thành Luyện nghe hiểu bộ video TED-ED",
+                    "Hoàn thành Luyện nghe hiểu bộ video IELTS for Preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Nắm vững 600 từ vựng IELTS",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección en el curso Intermediate - Every English 1",
+                    "Escucha 1 video de YouTube o un video de Ted Talks in brief",
+                    "Aprende vocabulario IELTS",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Obtener certificado del curso Intermediate - Every English 1.",
+                    "Obtener certificado del curso Intermediate - Every English 2.",
+                    "Obtener certificado del curso Intermediate - Every English 3.",
+                    "Completar la Comprensión Auditiva de la colección Ted Talks in brief",
+                    "Completar la Comprensión Auditiva de la colección Ted Talk",
+                    "Completar la Comprensión Auditiva de la colección TED-ED",
+                    "Completar la Comprensión Auditiva de la colección IELTS for Preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Dominar 600 palabras de IELTS",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2"
                 ]
             }
         ]
@@ -248,32 +614,105 @@ const PLANS = {
         deviceGroup: "B",
         doc_en: "1igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
         doc_vn: "1Das9kJiZToWVXxf1Pn79qfCWf9A6GDwJyGBiIZhe42Y",
-        phases: [
+        phases_en: [
             {
-                name: "Comprehensive Foundation",
+                name: "Phase 1",
                 tasks: [
-                    "Complete IELTS prep online courses",
-                    "Practice writing essays with detailed feedback",
-                    "Use desktop software for reading practice",
-                    "Watch video lessons on test strategies"
+                    "Study 1 EPIC lesson for beginner level",
+                    "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
+                    "Learn IELTS vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Structured Practice",
+                name: "Phase 2",
                 tasks: [
-                    "Timed writing practice on laptop",
-                    "Speaking practice with screen recording",
-                    "Detailed answer analysis for reading/listening",
-                    "Build academic word list"
+                    "Complete 100 EPIC video lessons for beginners",
+                    "Complete 200h English communication - high beginner video collection.",
+                    "Certificate for 100 speaking practice scenarios with AI in English learners world.",
+                    "Master 300 IELTS words",
+                    "Complete Ted Talks in brief video collection",
+                    "Complete IELTS Basic video collection"
                 ]
             },
             {
-                name: "Assessment & Improvement",
+                name: "Phase 3",
                 tasks: [
-                    "Full computer-based practice tests",
-                    "Review sessions with online tutors",
-                    "Create study schedules and track progress",
-                    "Target weak areas with focused practice"
+                    "Complete 100 EPIC video lessons for intermediates",
+                    "Complete Listening Comprehension of the Ted Talk video collection",
+                    "Complete Listening Comprehension of the TED-ED video collection",
+                    "Complete Listening Comprehension of the IELTS for Preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level on British Council",
+                    "Master 300 IELTS words"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài EPIC cho người mới bắt đầu",
+                    "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
+                    "Học từ vựng IELTS",
+                    "Luyện nói 1 tình huống với AI"
+                ]
+            },
+            {
+                name: "Giai đoạn 2",
+                tasks: [
+                    "Hoàn thành 100 bài học video EPIC cho người mới bắt đầu",
+                    "Hoàn thành bộ video 200h giao tiếp tiếng Anh - sơ cấp cao.",
+                    "Chứng nhận hoàn thành 100 tình huống luyện nói với AI.",
+                    "Nắm vững 300 từ vựng IELTS",
+                    "Hoàn thành bộ video Ted Talks in brief",
+                    "Hoàn thành bộ video IELTS Basic"
+                ]
+            },
+            {
+                name: "Giai đoạn 3",
+                tasks: [
+                    "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
+                    "Hoàn thành Luyện nghe hiểu bộ video TED-ED",
+                    "Hoàn thành Luyện nghe hiểu bộ video IELTS for Preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2 trên British Council",
+                    "Nắm vững 300 từ vựng IELTS"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección EPIC para principiantes",
+                    "Escucha 1 video de YouTube o de la colección 200h English communication",
+                    "Aprende vocabulario IELTS",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Completa 100 lecciones de video EPIC para principiantes",
+                    "Completar la colección de videos 200h English communication - principiante alto.",
+                    "Certificado por 100 escenarios de práctica oral con IA.",
+                    "Dominar 300 palabras de IELTS",
+                    "Completar la colección de videos Ted Talks in brief",
+                    "Completar la colección de videos IELTS Basic"
+                ]
+            },
+            {
+                name: "Fase 3",
+                tasks: [
+                    "Completa 100 lecciones de video EPIC para intermedios",
+                    "Completar la Comprensión Auditiva de la colección Ted Talk",
+                    "Completar la Comprensión Auditiva de la colección TED-ED",
+                    "Completar la Comprensión Auditiva de la colección IELTS for Preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2 en British Council",
+                    "Dominar 300 palabras de IELTS"
                 ]
             }
         ]
@@ -286,32 +725,75 @@ const PLANS = {
         deviceGroup: "B",
         doc_en: "igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
         doc_vn: "aqcRfcqp_bCFt8Dkb0DSRZbJeIzHqIOD6SCi9fb4Fls",
-        phases: [
+        phases_en: [
             {
-                name: "Advanced Preparation",
+                name: "Phase 1",
                 tasks: [
-                    "Master complex question types",
-                    "Advanced academic writing techniques",
-                    "Sophisticated vocabulary and collocations",
-                    "Simulate real test conditions"
+                    "Study 1 EPIC lesson for intermediate level",
+                    "Listen to 1 YouTube video or a video in the Ted Talks in brief",
+                    "Learn IELTS vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Performance Optimization",
+                name: "Phase 2",
                 tasks: [
-                    "Develop personal note-taking system",
-                    "Perfect paragraph structure for writing",
-                    "Enhance coherence and cohesion",
-                    "Practice with band 7+ model answers"
+                    "Complete 100 EPIC video lessons for intermediates",
+                    "Complete Listening Comprehension of the Ted Talks in brief video collection",
+                    "Complete Listening Comprehension of the Ted Talk video collection",
+                    "Complete Listening Comprehension of the TED-ED video collection",
+                    "Complete Listening Comprehension of the IELTS for Preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level on British Council",
+                    "Master 300 IELTS words"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài EPIC cho trình độ trung cấp",
+                    "Nghe 1 video YouTube hoặc video trong bộ Ted Talks in brief",
+                    "Học từ vựng IELTS",
+                    "Luyện nói 1 tình huống với AI"
                 ]
             },
             {
-                name: "Final Sprint",
+                name: "Giai đoạn 2",
                 tasks: [
-                    "Weekly full-length practice tests",
-                    "Expert review of all submissions",
-                    "Mental preparation and stress management",
-                    "Last-minute tips and strategies"
+                    "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talks in brief",
+                    "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
+                    "Hoàn thành Luyện nghe hiểu bộ video TED-ED",
+                    "Hoàn thành Luyện nghe hiểu bộ video IELTS for Preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2 trên British Council",
+                    "Nắm vững 300 từ vựng IELTS"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección EPIC para intermedios",
+                    "Escucha 1 video de YouTube o un video de Ted Talks in brief",
+                    "Aprende vocabulario IELTS",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Completa 100 lecciones de video EPIC para intermedios",
+                    "Completar la Comprensión Auditiva de la colección Ted Talks in brief",
+                    "Completar la Comprensión Auditiva de la colección Ted Talk",
+                    "Completar la Comprensión Auditiva de la colección TED-ED",
+                    "Completar la Comprensión Auditiva de la colección IELTS for Preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2 en British Council",
+                    "Dominar 300 palabras de IELTS"
                 ]
             }
         ]
@@ -328,32 +810,105 @@ const PLANS = {
         deviceGroup: "A",
         doc_en: "1Gg0XUCIxWbeZ1z9gnS-pF5M01cz0_r-ae0liMoZchU8",
         doc_vn: "1lpq_9WXQIzhIwlGchlNXMVbcNdZttd1VWXIyb0qNV4k",
-        phases: [
+        phases_en: [
             {
-                name: "TOEIC Basics",
+                name: "Phase 1",
                 tasks: [
-                    "Understand TOEIC test structure",
-                    "Business vocabulary foundation",
-                    "Practice Part 1: Photographs (mobile app)",
-                    "Part 2: Question-Response practice"
+                    "Study 1 lesson in Basic - Every English 1 course",
+                    "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
+                    "Learn TOEIC vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Skill Building",
+                name: "Phase 2",
                 tasks: [
-                    "Part 3 & 4: Conversations and talks",
-                    "Part 5 & 6: Grammar and reading",
-                    "Part 7: Single passage comprehension",
-                    "Time management basics"
+                    "Achieve completion certificate for Basic - Every English 1 course.",
+                    "Achieve completion certificate for Basic - Every English 2 course.",
+                    "Achieve completion certificate for Basic - Every English 3 course.",
+                    "Complete Listening Comprehension of the 200h English communication - high beginner video collection.",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI in English learners world.",
+                    "Master 500 TOEIC vocabs"
                 ]
             },
             {
-                name: "Practice & Progress",
+                name: "Phase 3",
                 tasks: [
-                    "Daily practice with mobile TOEIC apps",
-                    "Track scores part by part",
-                    "Review common mistake patterns",
-                    "Build test confidence"
+                    "Achieve completion certificate for Intermediate - Every English 1 course.",
+                    "Achieve completion certificate for Intermediate - Every English 2 course.",
+                    "Achieve completion certificate for Intermediate - Every English 3 course.",
+                    "Complete Listening Comprehension of TOEIC preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level on British Council",
+                    "Master 500 TOEIC words"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài trong khóa Basic - Every English 1",
+                    "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
+                    "Học từ vựng TOEIC",
+                    "Luyện nói 1 tình huống với AI"
+                ]
+            },
+            {
+                name: "Giai đoạn 2",
+                tasks: [
+                    "Đạt chứng nhận hoàn thành khóa Basic - Every English 1.",
+                    "Đạt chứng nhận hoàn thành khóa Basic - Every English 2.",
+                    "Đạt chứng nhận hoàn thành khóa Basic - Every English 3.",
+                    "Hoàn thành Luyện nghe hiểu bộ 200h giao tiếp tiếng Anh - sơ cấp cao.",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI.",
+                    "Nắm vững 500 từ vựng TOEIC"
+                ]
+            },
+            {
+                name: "Giai đoạn 3",
+                tasks: [
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 3.",
+                    "Hoàn thành Luyện nghe hiểu bộ video TOEIC preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2 trên British Council",
+                    "Nắm vững 500 từ vựng TOEIC"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección en el curso Basic - Every English 1",
+                    "Escucha 1 video de YouTube o de la colección 200h English communication",
+                    "Aprende vocabulario TOEIC",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Obtener certificado del curso Basic - Every English 1.",
+                    "Obtener certificado del curso Basic - Every English 2.",
+                    "Obtener certificado del curso Basic - Every English 3.",
+                    "Completar la Comprensión Auditiva de la colección 200h English communication.",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA.",
+                    "Dominar 500 palabras de TOEIC"
+                ]
+            },
+            {
+                name: "Fase 3",
+                tasks: [
+                    "Obtener certificado del curso Intermediate - Every English 1.",
+                    "Obtener certificado del curso Intermediate - Every English 2.",
+                    "Obtener certificado del curso Intermediate - Every English 3.",
+                    "Completar la Comprensión Auditiva de la colección TOEIC preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2 en British Council",
+                    "Dominar 500 palabras de TOEIC"
                 ]
             }
         ]
@@ -366,32 +921,72 @@ const PLANS = {
         deviceGroup: "A",
         doc_en: "1II4WRqn9jbx4lPrAtuOaQfh6xpEc4FsTmh_QQBxflAU",
         doc_vn: "1LPpcZrEaqxlUlbAsITPLjnfLxjs4Lb9SAe7soaFnNz4",
-        phases: [
+        phases_en: [
             {
-                name: "Advanced Test Skills",
+                name: "Phase 1",
                 tasks: [
-                    "Master all 7 parts of TOEIC",
-                    "Advanced business vocabulary",
-                    "Speed reading for Part 7",
-                    "Complex grammar patterns (Part 5/6)"
+                    "Study 1 lesson in Intermediate - Every English 1 course",
+                    "Listen to 1 YouTube video or a video in TOEIC preparation",
+                    "Learn TOEIC vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Score Maximization",
+                name: "Phase 2",
                 tasks: [
-                    "Practice with real test difficulty",
-                    "Eliminate answer choice distractors",
-                    "Improve listening accuracy",
-                    "Perfect timing for each section"
+                    "Achieve completion certificate for Intermediate - Every English 1 course.",
+                    "Achieve completion certificate for Intermediate - Every English 2 course.",
+                    "Achieve completion certificate for Intermediate - Every English 3 course.",
+                    "Complete Listening Comprehension of TOEIC preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level on British Council",
+                    "Master 1200 TOEIC words"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài trong khóa Intermediate - Every English 1",
+                    "Nghe 1 video YouTube hoặc video trong bộ TOEIC preparation",
+                    "Học từ vựng TOEIC",
+                    "Luyện nói 1 tình huống với AI"
                 ]
             },
             {
-                name: "Peak Performance",
+                name: "Giai đoạn 2",
                 tasks: [
-                    "Full-length timed practice tests",
-                    "Target score strategies (700+, 850+, 950+)",
-                    "Final review of weak areas",
-                    "Test day preparation"
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
+                    "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 3.",
+                    "Hoàn thành Luyện nghe hiểu bộ video TOEIC preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2 trên British Council",
+                    "Nắm vững 1200 từ vựng TOEIC"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección en el curso Intermediate - Every English 1",
+                    "Escucha 1 video de YouTube o de la colección TOEIC preparation",
+                    "Aprende vocabulario TOEIC",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Obtener certificado del curso Intermediate - Every English 1.",
+                    "Obtener certificado del curso Intermediate - Every English 2.",
+                    "Obtener certificado del curso Intermediate - Every English 3.",
+                    "Completar la Comprensión Auditiva de la colección TOEIC preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2 en British Council",
+                    "Dominar 1200 palabras de TOEIC"
                 ]
             }
         ]
@@ -404,32 +999,96 @@ const PLANS = {
         deviceGroup: "B",
         doc_en: "1japMsSpJekFAqwSZZ3n-YApTFXH58_2h7D9nC0HkcZE",
         doc_vn: "1_oQNvib44V9SfQgf7Z_LlC-p0u8IYv7UrLNs8oae56Y",
-        phases: [
+        phases_en: [
             {
-                name: "Structured Learning",
+                name: "Phase 1",
                 tasks: [
-                    "Complete TOEIC online course modules",
-                    "Practice all parts with desktop software",
-                    "Build business English vocabulary lists",
-                    "Grammar fundamentals review"
+                    "Study 1 EPIC lesson for beginner level",
+                    "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
+                    "Learn TOEIC vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Practice Routine",
+                name: "Phase 2",
                 tasks: [
-                    "Listening practice with transcripts",
-                    "Reading comprehension exercises",
-                    "Grammar drills and quizzes",
-                    "Weekly progress assessments"
+                    "Complete Listening & Pronunciation For Beginners Video Collection.",
+                    "Complete 100 EPIC video lessons for beginners",
+                    "Complete 200h English communication - high beginner video collection.",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI in English learners world.",
+                    "Master 500 TOEIC vocabs"
                 ]
             },
             {
-                name: "Test Readiness",
+                name: "Phase 3",
                 tasks: [
-                    "Computer-based practice tests",
-                    "Detailed score analysis",
-                    "Personalized study plan adjustments",
-                    "Confidence building exercises"
+                    "Complete 100 EPIC video lessons for intermediates",
+                    "Complete Listening Comprehension of TOEIC preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Master 500 TOEIC vocabs",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài EPIC cho người mới bắt đầu",
+                    "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
+                    "Học từ vựng TOEIC",
+                    "Luyện nói 1 tình huống với AI"
+                ]
+            },
+            {
+                name: "Giai đoạn 2",
+                tasks: [
+                    "Hoàn thành bộ video Luyện nghe & Phát âm cho người mới bắt đầu.",
+                    "Hoàn thành 100 bài học video EPIC cho người mới bắt đầu",
+                    "Hoàn thành bộ video 200h giao tiếp tiếng Anh - sơ cấp cao.",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI.",
+                    "Nắm vững 500 từ vựng TOEIC"
+                ]
+            },
+            {
+                name: "Giai đoạn 3",
+                tasks: [
+                    "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
+                    "Hoàn thành Luyện nghe hiểu bộ video TOEIC preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Nắm vững 500 từ vựng TOEIC",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección EPIC para principiantes",
+                    "Escucha 1 video de YouTube o de la colección 200h English communication",
+                    "Aprende vocabulario TOEIC",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Completar la colección de videos de Comprensión Auditiva y Pronunciación para principiantes.",
+                    "Completa 100 lecciones de video EPIC para principiantes",
+                    "Completar la colección de videos 200h English communication - principiante alto.",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA.",
+                    "Dominar 500 palabras de TOEIC"
+                ]
+            },
+            {
+                name: "Fase 3",
+                tasks: [
+                    "Completa 100 lecciones de video EPIC para intermedios",
+                    "Completar la Comprensión Auditiva de la colección TOEIC preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Dominar 500 palabras de TOEIC",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2"
                 ]
             }
         ]
@@ -442,32 +1101,66 @@ const PLANS = {
         deviceGroup: "B",
         doc_en: "1nMpQL9xaS2MViQCs6Ygg6mp9ryBCDNgriYoCgzIGnew",
         doc_vn: "1Swai0tuB5WB2C94pJPM8fBQ928B15JHZ82x0jo51KNY",
-        phases: [
+        phases_en: [
             {
-                name: "Intensive Preparation",
+                name: "Phase 1",
                 tasks: [
-                    "Master advanced test-taking strategies",
-                    "Complete comprehensive practice sets",
-                    "Build specialized business vocabulary",
-                    "Perfect grammar accuracy"
+                    "Study 1 EPIC lesson for intermediate level",
+                    "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
+                    "Learn TOEIC vocab",
+                    "Practice speaking 1 scenario with AI"
                 ]
             },
             {
-                name: "Precision Training",
+                name: "Phase 2",
                 tasks: [
-                    "Eliminate all common errors",
-                    "Practice with authentic TOEIC materials",
-                    "Speed vs. accuracy optimization",
-                    "Part-specific drills for weak areas"
+                    "Complete 100 EPIC video lessons for intermediates",
+                    "Complete Listening Comprehension of TOEIC preparation video collection",
+                    "Achieve completion certificate for 100 speaking practice scenarios with AI",
+                    "Master 500 TOEIC vocabs",
+                    "Complete reading comprehension of 9 English stories at B1–B2 level"
+                ]
+            }
+        ],
+        phases_vi: [
+            {
+                name: "Giai đoạn 1",
+                tasks: [
+                    "Học 1 bài EPIC cho trình độ trung cấp",
+                    "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
+                    "Học từ vựng TOEIC",
+                    "Luyện nói 1 tình huống với AI"
                 ]
             },
             {
-                name: "High Score Achievement",
+                name: "Giai đoạn 2",
                 tasks: [
-                    "Regular full-length simulations",
-                    "Target 850+ score strategies",
-                    "Final polish and review",
-                    "Mental and physical test preparation"
+                    "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
+                    "Hoàn thành Luyện nghe hiểu bộ video TOEIC preparation",
+                    "Đạt chứng nhận hoàn thành 100 tình huống luyện nói với AI",
+                    "Nắm vững 500 từ vựng TOEIC",
+                    "Hoàn thành đọc hiểu 9 câu chuyện tiếng Anh ở trình độ B1–B2"
+                ]
+            }
+        ],
+        phases_es: [
+            {
+                name: "Fase 1",
+                tasks: [
+                    "Estudia 1 lección EPIC para intermedios",
+                    "Escucha 1 video de YouTube o de la colección 200h English communication",
+                    "Aprende vocabulario TOEIC",
+                    "Practica hablar 1 escenario con IA"
+                ]
+            },
+            {
+                name: "Fase 2",
+                tasks: [
+                    "Completa 100 lecciones de video EPIC para intermedios",
+                    "Completar la Comprensión Auditiva de la colección TOEIC preparation",
+                    "Obtener certificado por 100 escenarios de práctica oral con IA",
+                    "Dominar 500 palabras de TOEIC",
+                    "Completar lectura de comprensión de 9 historias en inglés nivel B1–B2"
                 ]
             }
         ]

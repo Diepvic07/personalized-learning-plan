@@ -122,22 +122,22 @@ var translations = {
                     a1: {
                         en: "I can barely understand spoken English (A1)",
                         vi: "Tôi hầu như không hiểu tiếng Anh giao tiếp (A1)",
-                        es: "Apenas puedo entender inglés hablado (A1)"
+                        es: "Apenas entiendo inglés hablado (A1)"
                     },
                     a2: {
                         en: "I can understand basic or familiar topics, but I can't speak much (A2)",
                         vi: "Tôi hiểu các chủ đề cơ bản hoặc quen thuộc, nhưng không nói được nhiều (A2)",
-                        es: "Puedo entender temas básicos o familiares, pero no puedo hablar mucho (A2)"
+                        es: "Entiendo temas básicos o familiares, pero no hablo mucho (A2)"
                     },
                     b1: {
                         en: "I can communicate fairly well on basic or familiar topics (B1)",
                         vi: "Tôi có thể giao tiếp khá tốt về các chủ đề cơ bản hoặc quen thuộc (B1)",
-                        es: "Puedo comunicarme bastante bien en temas básicos o familiares (B1)"
+                        es: "Me comunico bastante bien sobre temas básicos o familiares (B1)"
                     },
                     b2: {
                         en: "I communicate quite well and just need to maintain my level (B2 and above)",
                         vi: "Tôi giao tiếp khá tốt và chỉ cần duy trì trình độ (B2 trở lên)",
-                        es: "Me comunico bastante bien y solo necesito mantener mi nivel (B2 y superior)"
+                        es: "Me comunico bien y solo necesito mantener mi nivel (B2 o superior)"
                     }
                 }
             },
@@ -169,7 +169,7 @@ var translations = {
                 label: {
                     en: "What is your target level?",
                     vi: "Trình độ mục tiêu của bạn là gì?",
-                    es: "¿Cuál es tu nivel objetivo?"
+                    es: "¿Cuál es tu nivel deseado?"
                 },
                 options: {
                     b1: {
@@ -198,7 +198,7 @@ var translations = {
                 label: {
                     en: "Please specify your goal",
                     vi: "Vui lòng chỉ rõ mục tiêu của bạn",
-                    es: "Por favor especifica tu objetivo"
+                    es: "Por favor, especifica tu meta"
                 },
                 options: {
                     everyday: {
@@ -214,7 +214,7 @@ var translations = {
                     scholarship: {
                         en: "Scholarship",
                         vi: "Học bổng",
-                        es: "Beca"
+                        es: "Becas"
                     },
                     graduation: {
                         en: "Graduation",
@@ -234,7 +234,7 @@ var translations = {
                     immigrants: {
                         en: "Immigrants",
                         vi: "Định cư",
-                        es: "Inmigrantes"
+                        es: "Inmigración"
                     },
                     other: {
                         en: "Other",
@@ -252,7 +252,7 @@ var translations = {
                 label: {
                     en: "When do you want to reach that goal? eg: 09/2026",
                     vi: "Bạn muốn đạt mục tiêu đó khi nào? VD: 09/2026",
-                    es: "¿Cuándo quieres alcanzar ese objetivo? ej: 09/2026"
+                    es: "¿Cuándo quieres alcanzar esa meta? (ej: 09/2026)"
                 },
                 placeholder: {
                     en: "MM/YYYY",
@@ -291,23 +291,23 @@ var translations = {
                 label: {
                     en: "Devices to learn (multiple choice):",
                     vi: "Thiết bị học (chọn nhiều):",
-                    es: "Dispositivos para aprender (opción múltiple):"
+                    es: "Dispositivos para aprender (selección múltiple):"
                 },
                 options: {
                     mobile: {
                         en: "Mobile/Tablet",
                         vi: "Điện thoại/Máy tính bảng",
-                        es: "Móvil/Tableta"
+                        es: "Móvil/iPad"
                     },
                     laptop: {
                         en: "Laptop",
                         vi: "Máy tính xách tay",
-                        es: "Portátil"
+                        es: "Laptop"
                     },
                     both: {
                         en: "Both",
                         vi: "Cả hai",
-                        es: "Ambos"
+                        es: "Ambos (Móvil/iPad y Laptop)"
                     }
                 }
             },
@@ -315,28 +315,28 @@ var translations = {
                 label: {
                     en: "Describe your habit (tick box):",
                     vi: "Mô tả thói quen của bạn (đánh dấu):",
-                    es: "Describe tu hábito (marca):"
+                    es: "Describe tus hábitos (marca la casilla):"
                 },
                 options: {
                     read_native: {
                         en: "I usually read in my native language",
                         vi: "Tôi thường đọc bằng tiếng mẹ đẻ",
-                        es: "Usualmente leo en mi idioma nativo"
+                        es: "Normalmente leo en mi idioma nativo"
                     },
                     read_english: {
                         en: "I usually read in English",
                         vi: "Tôi thường đọc bằng tiếng Anh",
-                        es: "Usualmente leo en inglés"
+                        es: "Normalmente leo en inglés"
                     },
                     watch_native: {
                         en: "I usually watch YouTube or movies in my native language",
                         vi: "Tôi thường xem YouTube hoặc phim bằng tiếng mẹ đẻ",
-                        es: "Usualmente veo YouTube o películas en mi idioma nativo"
+                        es: "Normalmente veo YouTube o películas en mi idioma nativo"
                     },
                     watch_english: {
                         en: "I usually watch YouTube or movies in English",
                         vi: "Tôi thường xem YouTube hoặc phim bằng tiếng Anh",
-                        es: "Usualmente veo YouTube o películas en inglés"
+                        es: "Normalmente veo YouTube o películas en inglés"
                     },
                     rarely_communicate: {
                         en: "I rarely communicate in English",
@@ -346,7 +346,7 @@ var translations = {
                     regularly_communicate: {
                         en: "I regularly communicate in English",
                         vi: "Tôi thường xuyên giao tiếp bằng tiếng Anh",
-                        es: "Me comunico regularmente en inglés"
+                        es: "Me comunico en inglés regularmente"
                     }
                 }
             },
@@ -354,7 +354,7 @@ var translations = {
                 label: {
                     en: "How are you learning English (tick box):",
                     vi: "Bạn đang học tiếng Anh như thế nào (đánh dấu):",
-                    es: "¿Cómo estás aprendiendo inglés (marca):"
+                    es: "¿Cómo estás aprendiendo inglés? (marca la casilla):"
                 },
                 options: {
                     not_studying: {
@@ -375,7 +375,7 @@ var translations = {
                     center: {
                         en: "Studying at a language center",
                         vi: "Học tại trung tâm ngoại ngữ",
-                        es: "Estudiando en un centro de idiomas"
+                        es: "Estudiando en una academia de idiomas"
                     },
                     textbooks: {
                         en: "Studying with textbooks",
@@ -390,7 +390,7 @@ var translations = {
                     tutor: {
                         en: "Practicing speaking with a teacher / tutors",
                         vi: "Luyện nói với giáo viên / gia sư",
-                        es: "Practicando conversación con un profesor / tutores"
+                        es: "Practicando el habla con un profesor / tutores"
                     }
                 }
             }
@@ -405,17 +405,17 @@ var translations = {
                 title: {
                     en: "Adjust Your Plan",
                     vi: "Điều chỉnh kế hoạch của bạn",
-                    es: "Ajusta tu plan"
+                    es: "Falta de Tiempo"
                 },
                 message: {
                     en: "Based on your current level and target, you need more time or daily hours to reach your goal by the target date.",
                     vi: "Dựa trên trình độ hiện tại và mục tiêu của bạn, bạn cần nhiều thời gian hơn hoặc tăng số giờ học mỗi ngày để đạt mục tiêu vào ngày đã chọn.",
-                    es: "Según tu nivel actual y objetivo, necesitas más tiempo o más horas diarias para alcanzar tu meta en la fecha objetivo."
+                    es: "Para llegar al nivel seleccionado antes de la fecha objetivo, necesitas más horas. Tu horario actual no es suficiente."
                 },
                 description: {
                     en: "Extend the target date or increase your daily hours to meet your goal in the target date and daily availability quiz.",
                     vi: "Kéo dài ngày mục tiêu hoặc tăng số giờ học mỗi ngày để đạt mục tiêu trong phần câu hỏi về ngày mục tiêu và thời gian rảnh mỗi ngày.",
-                    es: "Extiende la fecha objetivo o aumenta tus horas diarias para cumplir tu meta en el cuestionario de fecha objetivo y disponibilidad diaria."
+                    es: "Alerta: Extiende la fecha objetivo o aumenta tus horas diarias para cumplir tu meta según el cuestionario de disponibilidad diaria."
                 },
                 button: {
                     en: "Adjust Plan",
@@ -427,12 +427,12 @@ var translations = {
                 title: {
                     en: "Great! Your plan is feasible",
                     vi: "Tuyệt vời! Kế hoạch của bạn khả thi",
-                    es: "¡Genial! Tu plan es factible"
+                    es: "Análisis Completo: Meta Alcanzable"
                 },
                 message: {
                     en: "You have enough time to reach your goal with your current daily commitment.",
                     vi: "Bạn có đủ thời gian để đạt mục tiêu với cam kết học hàng ngày hiện tại.",
-                    es: "Tienes suficiente tiempo para alcanzar tu objetivo con tu compromiso diario actual."
+                    es: "Vas por buen camino para tener éxito con tu compromiso actual."
                 },
                 button: {
                     en: "See Study Plan",
@@ -494,32 +494,37 @@ var translations = {
     dataSubmission: {
         title: {
             en: "Get Your Plan via Email",
-            vi: "Nhận kế hoạch qua Email",
-            es: "Recibe tu plan por correo electrónico"
+            vi: "Bước cuối: Nhận lộ trình học qua email",
+            es: "Paso final: Recibe tu plan de estudio por correo"
         },
         subtitle: {
             en: "We'll send your personalized learning plan to your inbox",
-            vi: "Chúng tôi sẽ gửi kế hoạch học tập cá nhân hóa của bạn đến hộp thư",
-            es: "Enviaremos tu plan de aprendizaje personalizado a tu bandeja de entrada"
+            vi: "Nhập thông tin chi tiết bên dưới để nhận ngay lộ trình học cá nhân hóa của bạn.",
+            es: "Ingresa tus datos abajo para recibir tu plan personalizado al instante."
+        },
+        headerCommitment: {
+            en: "Statement of Commitment",
+            vi: "Cam kết mục tiêu",
+            es: "Declaración de Compromiso"
         },
         fields: {
             name: {
                 label: {
                     en: "Full Name",
-                    vi: "Họ và tên",
-                    es: "Nombre completo"
+                    vi: "Tên của bạn (bắt buộc)",
+                    es: "Tu nombre (obligatorio)"
                 },
                 placeholder: {
                     en: "Enter your full name",
-                    vi: "Nhập họ và tên của bạn",
-                    es: "Ingresa tu nombre completo"
+                    vi: "Nhập tên của bạn",
+                    es: "Ingresa tu nombre"
                 }
             },
             email: {
                 label: {
                     en: "Email Address",
-                    vi: "Địa chỉ Email",
-                    es: "Correo electrónico"
+                    vi: "Email của bạn (bắt buộc)",
+                    es: "Tu correo (obligatorio)"
                 },
                 placeholder: {
                     en: "your.email@example.com",
@@ -530,13 +535,13 @@ var translations = {
             phone: {
                 label: {
                     en: "Phone Number",
-                    vi: "Số điện thoại",
-                    es: "Número de teléfono"
+                    vi: "Số điện thoại (tùy chọn)",
+                    es: "Tu número de teléfono (opcional)"
                 },
                 note: {
-                    en: "(optional — for faster support)",
-                    vi: "(tùy chọn — để được hỗ trợ nhanh hơn)",
-                    es: "(opcional — para soporte más rápido)"
+                    en: "(optional)",
+                    vi: "",
+                    es: ""
                 },
                 placeholder: {
                     en: "+84 123 456 789",
@@ -547,19 +552,19 @@ var translations = {
         },
         button: {
             en: "Send My Plan",
-            vi: "Gửi kế hoạch của tôi",
-            es: "Enviar mi plan"
+            vi: "Gửi",
+            es: "Enviar"
         },
         waitingEmail: {
             title: {
                 en: "We are crafting your personalized English learning roadmap",
-                vi: "Chúng tôi đang xây dựng lộ trình học tiếng Anh cá nhân hóa cho bạn",
-                es: "Estamos elaborando tu hoja de ruta de aprendizaje de inglés personalizada"
+                vi: "Chúng tôi đang xây dựng lộ trình tiếng Anh cá nhân hóa cho bạn",
+                es: "Estamos creando tu hoja de ruta personalizada"
             },
             message: {
                 en: "It will be sent directly to your email shortly. Our team may also contact you via phone to discuss your goals in detail.",
-                vi: "Nó sẽ được gửi trực tiếp đến email của bạn trong thời gian ngắn. Đội ngũ của chúng tôi cũng có thể liên hệ với bạn qua điện thoại để thảo luận chi tiết về mục tiêu của bạn.",
-                es: "Se enviará directamente a tu correo electrónico en breve. Nuestro equipo también puede contactarte por teléfono para discutir tus objetivos en detalle."
+                vi: "Lộ trình sẽ được gửi trực tiếp đến email của bạn trong giây lát. Đội ngũ của chúng tôi cũng có thể liên hệ qua điện thoại để thảo luận chi tiết hơn về mục tiêu của bạn.",
+                es: "Se enviará directamente a tu correo en breve. Nuestro equipo podría contactarte por teléfono para discutir tus metas en detalle."
             }
         }
     },
@@ -569,24 +574,29 @@ var translations = {
     // ============================================================
     confirmation: {
         title: {
-            en: "Your Personalized English Learning Plan is Ready! 🚀",
-            vi: "Kế hoạch học tiếng Anh của bạn đã sẵn sàng! 🚀",
-            es: "¡Tu Plan Personalizado de Aprendizaje de Inglés está Listo! 🚀"
+            en: "Sent Successfully",
+            vi: "Gửi thành công",
+            es: "Enviado con éxito"
         },
         message: {
-            en: "Congratulations on prioritizing your personal growth! 🌟 We've sent your plan to your inbox. If you don't see it, please check your spam folder.",
-            vi: "Chúc mừng bạn đã ưu tiên phát triển bản thân! 🌟 Chúng tôi đã gửi kế hoạch đến hộp thư của bạn. Vui lòng kiểm tra cả thư mục spam nhé.",
-            es: "¡Felicitaciones por priorizar tu crecimiento personal! 🌟 Hemos enviado tu plan a tu bandeja de entrada. Por favor revisa también tu carpeta de spam."
+            en: "Your study plan will be sent to your email. Please check your inbox.",
+            vi: "Lộ trình học sẽ được gửi đến email của bạn. Vui lòng kiểm tra hộp thư.",
+            es: "Tu plan de estudio será enviado a tu correo. Por favor, revisa tu bandeja de entrada."
+        },
+        messageVariant: {
+            en: "The eJOY team will contact you via phone to discuss your plan in detail.",
+            vi: "Đội ngũ eJOY sẽ liên hệ qua điện thoại để thảo luận chi tiết hơn về kế hoạch học của bạn.",
+            es: "El equipo de eJOY te contactará por teléfono para discutir tus metas en detalle."
         },
         subtitle: {
             en: "Ready to start your journey?",
-            vi: "Sẵn sàng bắt đầu hành trình của bạn?",
-            es: "¿Listo para comenzar tu viaje?"
+            vi: "",
+            es: ""
         },
         button: {
             en: "Start Learning Now",
             vi: "Bắt đầu học ngay",
-            es: "Empezar a aprender ahora"
+            es: "Empieza a aprender ahora"
         }
     },
     customEnd: {
@@ -613,36 +623,36 @@ var translations = {
     commitment: {
         modal1: {
             title: {
-                en: "I promise to study for 5 minutes every day",
-                vi: "Tôi hứa sẽ học 5 phút mỗi ngày",
-                es: "Prometo estudiar 5 minutos todos los días"
+                en: "Statement of Commitment",
+                vi: "Tuyên bố cam kết",
+                es: "Declaración de Compromiso"
             },
             message: {
-                en: "Small, consistent steps lead to big results. Are you ready to commit?",
-                vi: "Những bước nhỏ, kiên định sẽ dẫn đến kết quả lớn. Bạn đã sẵn sàng cam kết?",
-                es: "Pequeños pasos consistentes conducen a grandes resultados. ¿Estás listo para comprometerte?"
+                en: "I promise to study at least 5 minutes every day.",
+                vi: "Học ít nhất 5 phút mỗi ngày.",
+                es: "Estudiar al menos 5 minutos cada día."
             },
             button: {
                 en: "I Promise",
-                vi: "Tôi hứa",
-                es: "Lo prometo"
+                vi: "Tôi cam kết",
+                es: "Declaración de Compromiso"
             }
         },
         modal2: {
             title: {
-                en: "I will dedicate 5 hours per week to my English journey",
-                vi: "Tôi sẽ dành 5 giờ mỗi tuần cho hành trình tiếng Anh của tôi",
-                es: "Dedicaré 5 horas por semana a mi viaje de inglés"
+                en: "Statement of Commitment",
+                vi: "Tuyên bố cam kết",
+                es: "Declaración de Compromiso"
             },
             message: {
-                en: "Consistency is the key to fluency. Can you commit to this?",
-                vi: "Kiên định là chìa khóa để thành thạo. Bạn có thể cam kết điều này?",
-                es: "La consistencia es la clave para la fluidez. ¿Puedes comprometerte con esto?"
+                en: "Accumulate a minimum of 5 hours of learning in 30 days.",
+                vi: "Tích lũy tối thiểu 5 giờ học trong 30 ngày.",
+                es: "Acumular un mínimo de 5 horas de aprendizaje en 30 días."
             },
             button: {
                 en: "I'm Committed",
                 vi: "Tôi cam kết",
-                es: "Estoy comprometido"
+                es: "Me comprometo a aprender 5 min/día"
             }
         },
         modal3: {
@@ -653,13 +663,53 @@ var translations = {
             },
             quote: {
                 en: "I choose courage over comfort—and I'm willing to try.",
-                vi: "Tôi chọn can đảm thay vì thoải mái—và tôi sẵn sàng thử.",
-                es: "Elijo el coraje sobre la comodidad—y estoy dispuesto a intentarlo."
+                vi: "Tôi chọn sự can đảm thay vì sự thoải mái và tôi sẵn sàng thử.",
+                es: "Elijo el coraje sobre la comodidad, y estoy dispuesto/a a intentarlo."
             },
             button: {
-                en: "I'm ready to try new habit",
-                vi: "Tôi sẵn sàng thử thói quen mới",
-                es: "Estoy listo para probar un nuevo hábito"
+                en: "I'm ready to try a new habit",
+                vi: "Tôi sẵn sàng",
+                es: "Estoy listo/a para probar un nuevo hábito"
+            }
+        }
+    },
+
+    // ============================================================
+    // SCREEN 7: ONBOARDING (New Scenarios)
+    // ============================================================
+    onboarding: {
+        scenario1: {
+            title: {
+                en: "You listen a lot but don't practice speaking enough.",
+                vi: "Bạn nghe nhiều nhưng chưa luyện nói đủ.",
+                es: "Escuchas mucho pero no practicas el habla lo suficiente."
+            },
+            message: {
+                en: "Start speaking today to become fluent.",
+                vi: "Hãy bắt đầu luyện nói ngay hôm nay để có thể giao tiếp trôi chảy",
+                es: "Ver contenido en inglés ayuda a tus habilidades de escucha, pero hablar es lo que construye confianza y fluidez."
+            },
+            button: {
+                en: "👉 Try an AI Roleplay lesson",
+                vi: "👉 Thử ngay bài học nhập vai với AI",
+                es: "👉 Prueba una lección de juego de roles con IA"
+            }
+        },
+        scenario2: {
+            title: {
+                en: "Let's build a new English learning habit",
+                vi: "Hãy cùng xây dựng thói quen học tiếng Anh mới",
+                es: "Vamos a construir un nuevo hábito de aprendizaje de inglés: solo 5 minutos al día."
+            },
+            subtitle: {
+                en: "Just 5 minutes a day...",
+                vi: "Chỉ 5 phút mỗi ngày thôi..",
+                es: "Una práctica breve y diaria es la forma más fácil de mejorar constantemente."
+            },
+            button: {
+                en: "👉 Start with a 5-minute lesson",
+                vi: "👉 Bắt đầu với bài học 5 phút",
+                es: "👉 Empieza con una lección de 5 minutos"
             }
         }
     },
@@ -680,184 +730,29 @@ var translations = {
         }
     },
 
-    // ============================================================
-    // SCREEN 7: YOUTUBE VIDEO LESSON (Video Learners - Plans 2 & 4)
-    // ============================================================
+    // Kept for backward compatibility if needed, but Onboarding keys above are preferred for the new flow
     youtubeLesson: {
-        title: {
-            en: "Start with your first lesson",
-            vi: "Bắt đầu với bài học đầu tiên",
-            es: "Comienza con tu primera lección"
-        },
-        subtitle: {
-            en: "While you wait, begin building your daily habit with this quick 5-minute exercise.",
-            vi: "Trong khi chờ đợi, hãy bắt đầu xây dựng thói quen hàng ngày với bài tập nhanh 5 phút này.",
-            es: "Mientras esperas, comienza a construir tu hábito diario con este ejercicio rápido de 5 minutos."
-        },
-        roadmap: {
-            label: {
-                en: "YOUR ROADMAP • DAY",
-                vi: "LỘ TRÌNH CỦA BẠN • NGÀY",
-                es: "TU HOJA DE RUTA • DÍA"
-            },
-            day1: {
-                en: "Day 1",
-                vi: "Ngày 1",
-                es: "Día 1"
-            },
-            day2: {
-                en: "Day 2: Conversation",
-                vi: "Ngày 2: Hội thoại",
-                es: "Día 2: Conversación"
-            },
-            day3: {
-                en: "Day 3: Application",
-                vi: "Ngày 3: Ứng dụng",
-                es: "Día 3: Aplicación"
-            }
-        },
-        lesson: {
-            badge: {
-                en: "TODAY'S LESSON",
-                vi: "BÀI HỌC HÔM NAY",
-                es: "LECCIÓN DE HOY"
-            },
-            title: {
-                en: "Essentials & Warm-up",
-                vi: "Kiến thức cơ bản & Khởi động",
-                es: "Fundamentos y calentamiento"
-            },
-            description: {
-                en: "Simple exercises to get you started without feeling overwhelmed.",
-                vi: "Bài tập đơn giản để bạn bắt đầu mà không cảm thấy choáng ngợp.",
-                es: "Ejercicios simples para comenzar sin sentirte abrumado."
-            },
-            duration: {
-                en: "5 min",
-                vi: "5 phút",
-                es: "5 min"
-            },
-            skills: {
-                vocabulary: {
-                    en: "Vocabulary",
-                    vi: "Từ vựng",
-                    es: "Vocabulario"
-                },
-                listening: {
-                    en: "Listening",
-                    vi: "Nghe",
-                    es: "Escuchar"
-                },
-                reading: {
-                    en: "Reading",
-                    vi: "Đọc",
-                    es: "Leer"
-                },
-                writing: {
-                    en: "Writing",
-                    vi: "Viết",
-                    es: "Escribir"
-                }
-            }
-        },
-        button: {
-            en: "👍 Start with a 5-minute lesson",
-            vi: "👍 Bắt đầu với bài học 5 phút",
-            es: "👍 Comenzar con una lección de 5 minutos"
-        }
+        title: { en: "Start with your first lesson", vi: "Bắt đầu với bài học đầu tiên", es: "Comienza con tu primera lección" },
+        subtitle: { en: "While you wait, begin building your daily habit with this quick 5-minute exercise.", vi: "Trong khi chờ đợi, hãy bắt đầu xây dựng thói quen hàng ngày với bài tập nhanh 5 phút này.", es: "Mientras esperas, comienza a construir tu hábito diario con este ejercicio rápido de 5 minutos." },
+        roadmap: { label: { en: "YOUR ROADMAP • DAY", vi: "LỘ TRÌNH CỦA BẠN • NGÀY", es: "TU HOJA DE RUTA • DÍA" }, day1: { en: "Day 1", vi: "Ngày 1", es: "Día 1" }, day2: { en: "Day 2: Conversation", vi: "Ngày 2: Hội thoại", es: "Día 2: Conversación" }, day3: { en: "Day 3: Application", vi: "Ngày 3: Ứng dụng", es: "Día 3: Aplicación" } },
+        lesson: { badge: { en: "TODAY'S LESSON", vi: "BÀI HỌC HÔM NAY", es: "LECCIÓN DE HOY" }, title: { en: "Essentials & Warm-up", vi: "Kiến thức cơ bản & Khởi động", es: "Fundamentos y calentamiento" }, description: { en: "Simple exercises to get you started without feeling overwhelmed.", vi: "Bài tập đơn giản để bạn bắt đầu mà không cảm thấy choáng ngợp.", es: "Ejercicios simples para comenzar sin sentirte abrumado." }, duration: { en: "5 min", vi: "5 phút", es: "5 min" }, skills: { vocabulary: { en: "Vocabulary", vi: "Từ vựng", es: "Vocabulario" }, listening: { en: "Listening", vi: "Nghe", es: "Escuchar" }, reading: { en: "Reading", vi: "Đọc", es: "Leer" }, writing: { en: "Writing", vi: "Viết", es: "Escribir" } } },
+        button: { en: "👍 Start with a 5-minute lesson", vi: "👍 Bắt đầu với bài học 5 phút", es: "👍 Comenzar con una lección de 5 minutos" }
     },
-
-    // ============================================================
-    // SCREEN 8: AI ROLEPLAY (General Learners - All Other Plans)
-    // ============================================================
     aiRoleplay: {
-        badge: {
-            en: "AI SUGGESTION",
-            vi: "GỢI Ý TỪ AI",
-            es: "SUGERENCIA DE IA"
-        },
-        title: {
-            en: "Level up your speaking with AI Roleplay scenarios.",
-            vi: "Nâng cao kỹ năng nói của bạn với các tình huống Nhập vai AI.",
-            es: "Mejora tu habla con escenarios de juego de rol con IA."
-        },
-        subtitle: {
-            en: "Practice real-world conversations in a safe environment before stepping out.",
-            vi: "Thực hành các cuộc trò chuyện thực tế trong môi trường an toàn trước khi bước ra ngoài.",
-            es: "Practica conversaciones del mundo real en un entorno seguro antes de salir."
-        },
-        tag: {
-            recommended: {
-                en: "RECOMMENDED",
-                vi: "KHUYẾN NGHỊ",
-                es: "RECOMENDADO"
-            },
-            speaking: {
-                en: "SPEAKING",
-                vi: "NÓI",
-                es: "HABLAR"
-            }
-        },
+        badge: { en: "AI SUGGESTION", vi: "GỢI Ý TỪ AI", es: "SUGERENCIA DE IA" },
+        title: { en: "Level up your speaking with AI Roleplay scenarios.", vi: "Nâng cao kỹ năng nói của bạn với các tình huống Nhập vai AI.", es: "Mejora tu habla con escenarios de juego de rol con IA." },
+        subtitle: { en: "Practice real-world conversations in a safe environment before stepping out.", vi: "Thực hành các cuộc trò chuyện thực tế trong môi trường an toàn trước khi bước ra ngoài.", es: "Practica conversaciones del mundo real en un entorno seguro antes de salir." },
+        tag: { recommended: { en: "RECOMMENDED", vi: "KHUYẾN NGHỊ", es: "RECOMENDADO" }, speaking: { en: "SPEAKING", vi: "NÓI", es: "HABLAR" } },
         scenarios: {
             coffeeShop: {
-                title: {
-                    en: "Coffee Shop Order",
-                    vi: "Gọi món tại quán cà phê",
-                    es: "Pedido en cafetería"
-                },
-                description: {
-                    en: "You'll act as a customer ordering a latte. The AI barista will ask for your preferences.",
-                    vi: "Bạn sẽ đóng vai một khách hàng gọi món latte. AI barista sẽ hỏi về sở thích của bạn.",
-                    es: "Actuarás como cliente pidiendo un café con leche. El barista de IA preguntará por tus preferencias."
-                }
+                title: { en: "Coffee Shop Order", vi: "Gọi món tại quán cà phê", es: "Pedido en cafetería" },
+                description: { en: "You'll act as a customer ordering a latte. The AI barista will ask for your preferences.", vi: "Bạn sẽ đóng vai một khách hàng gọi món latte. AI barista sẽ hỏi về sở thích của bạn.", es: "Actuarás como cliente pidiendo un café con leche. El barista de IA preguntará por tus preferencias." }
             },
-            jobInterview: {
-                title: {
-                    en: "Job Interview Prep",
-                    vi: "Chuẩn bị phỏng vấn xin việc",
-                    es: "Preparación para entrevista de trabajo"
-                }
-            },
-            hotelCheckin: {
-                title: {
-                    en: "Hotel Check-in",
-                    vi: "Nhận phòng khách sạn",
-                    es: "Check-in de hotel"
-                }
-            }
+            jobInterview: { title: { en: "Job Interview Prep", vi: "Chuẩn bị phỏng vấn xin việc", es: "Preparación para entrevista de trabajo" } },
+            hotelCheckin: { title: { en: "Hotel Check-in", vi: "Nhận phòng khách sạn", es: "Check-in de hotel" } }
         },
-        labels: {
-            roleplay: {
-                en: "AI ROLEPLAY",
-                vi: "NHẬP VAI AI",
-                es: "JUEGO DE ROL IA"
-            },
-            speaking: {
-                en: "Speaking",
-                vi: "Nói",
-                es: "Hablar"
-            },
-            feedback: {
-                en: "Feedback",
-                vi: "Phản hồi",
-                es: "Retroalimentación"
-            },
-            duration: {
-                en: "min",
-                vi: "phút",
-                es: "min"
-            },
-            locked: {
-                en: "Locked",
-                vi: "Đã khóa",
-                es: "Bloqueado"
-            }
-        },
-        button: {
-            en: "Start AI Conversation",
-            vi: "Bắt đầu trò chuyện với AI",
-            es: "Iniciar conversación con IA"
-        }
+        labels: { roleplay: { en: "AI ROLEPLAY", vi: "NHẬP VAI AI", es: "JUEGO DE ROL IA" }, speaking: { en: "Speaking", vi: "Nói", es: "Hablar" }, feedback: { en: "Feedback", vi: "Phản hồi", es: "Retroalimentación" }, duration: { en: "min", vi: "phút", es: "min" }, locked: { en: "Locked", vi: "Đã khóa", es: "Bloqueado" } },
+        button: { en: "Start AI Conversation", vi: "Bắt đầu trò chuyện với AI", es: "Iniciar conversación con IA" }
     }
 };
 

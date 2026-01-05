@@ -24,6 +24,14 @@ function renderStudyPlan() {
   const plan = PLANS[planId];
   const docId = (lang === 'vi') ? plan.doc_vn : plan.doc_en;
 
+  // Get phases based on language
+  let phases = plan.phases_en; // Default fallback
+  if (lang === 'vi' && plan.phases_vi) {
+    phases = plan.phases_vi;
+  } else if (lang === 'es' && plan.phases_es) {
+    phases = plan.phases_es;
+  }
+
   const app = document.getElementById('app');
   app.innerHTML = `
     <div class="min-h-screen bg-gray-50 py-8 px-4">
@@ -40,10 +48,10 @@ function renderStudyPlan() {
           
           <!-- Phases -->
           <div class="space-y-8">
-            ${plan.phases.map((phase, index) => `
+            ${phases.map((phase, index) => `
               <div class="border-l-4 border-primary pl-6">
                 <h3 class="text-xl font-bold text-gray-800 mb-3">
-                  ${Utils.t(content.phase, lang)} ${index + 1}: ${phase.name}
+                  ${phase.name}
                 </h3>
                 <p class="text-sm text-gray-600 mb-3">${Utils.t(content.tasks, lang)}:</p>
                 <ul class="space-y-2">
