@@ -48,42 +48,42 @@ const PLAN_TITLES = {
 
 const EMAIL_TEMPLATES = {
     en: {
-        subject: "Your Personalized English Learning Plan is Ready! 🚀",
+        subject: "Your Personalized English Learning Plan is Ready! \uD83D\uDE80",
         body: (name, link) => `Hi ${name},\n\n` +
-            `Congratulations on prioritizing your personal growth! 🌟 Your commitment to learning is the first step toward future success.\n\n` +
-            `### 📘 Your Personalized Plan\n` +
+            `Congratulations on prioritizing your personal growth! \uD83C\uDF1F Your commitment to learning is the first step toward future success.\n\n` +
+            `### \uD83D\uDCD8 Your Personalized Plan\n` +
             `Based on your responses, here is the study plan we've crafted for you:\n` +
             `**[Link to Google Doc: Your Learning Plan](${link})**\n\n` +
-            `### 🤝 What's Next?\n` +
+            `### \uD83E\uDD1D What's Next?\n` +
             `To help you start strong, **an eJOY team member will contact you shortly** to guide you through the onboarding process and answer any questions.\n\n` +
             `We're excited to support your journey.\n\n` +
-            `**Happy Learning!** 🎈\n` +
+            `**Happy Learning!** \uD83C\uDF88\n` +
             `*The eJOY Team*`
     },
     vi: {
-        subject: "Kế hoạch học tiếng Anh cá nhân hóa của bạn đã sẵn sàng! 🚀",
+        subject: "Kế hoạch học tiếng Anh cá nhân hóa của bạn đã sẵn sàng! \uD83D\uDE80",
         body: (name, link) => `Chào ${name},\n\n` +
-            `Chúc mừng bạn đã ưu tiên sự phát triển bản thân! 🌟 Cam kết học tập của bạn là bước đầu tiên hướng tới thành công trong tương lai.\n\n` +
-            `### 📘 Kế hoạch cá nhân hóa của bạn\n` +
+            `Chúc mừng bạn đã ưu tiên sự phát triển bản thân! \uD83C\uDF1F Cam kết học tập của bạn là bước đầu tiên hướng tới thành công trong tương lai.\n\n` +
+            `### \uD83D\uDCD8 Kế hoạch cá nhân hóa của bạn\n` +
             `Dựa trên câu trả lời của bạn, đây là lộ trình học tập chúng tôi đã xây dựng cho bạn:\n` +
             `**[Link Google Doc: Kế hoạch học tập của bạn](${link})**\n\n` +
-            `### 🤝 Bước tiếp theo là gì?\n` +
+            `### \uD83E\uDD1D Bước tiếp theo là gì?\n` +
             `Để giúp bạn khởi đầu thuận lợi, **một thành viên của đội ngũ eJOY sẽ sớm liên hệ với bạn** để hướng dẫn quy trình giới thiệu và giải đáp mọi thắc mắc.\n\n` +
             `Chúng tôi rất hào hứng được đồng hành cùng bạn.\n\n` +
-            `**Chúc bạn học tốt!** 🎈\n` +
+            `**Chúc bạn học tốt!** \uD83C\uDF88\n` +
             `*Đội ngũ eJOY*`
     },
     es: {
-        subject: "¡Tu plan de aprendizaje de inglés personalizado está listo! 🚀",
+        subject: "¡Tu plan de aprendizaje de inglés personalizado está listo! \uD83D\uDE80",
         body: (name, link) => `Hola ${name},\n\n` +
-            `¡Felicitaciones por priorizar tu crecimiento personal! 🌟 Tu compromiso con el aprendizaje es el primer paso hacia el éxito futuro.\n\n` +
-            `### 📘 Tu plan personalizado\n` +
+            `¡Felicitaciones por priorizar tu crecimiento personal! \uD83C\uDF1F Tu compromiso con el aprendizaje es el primer paso hacia el éxito futuro.\n\n` +
+            `### \uD83D\uDCD8 Tu plan personalizado\n` +
             `Basado en tus respuestas, aquí tienes el plan de estudio que hemos elaborado para ti:\n` +
             `**[Enlace a Google Doc: Tu plan de aprendizaje](${link})**\n\n` +
-            `### 🤝 ¿Qué sigue?\n` +
+            `### \uD83E\uDD1D ¿Qué sigue?\n` +
             `Para ayudarte a comenzar con fuerza, **un miembro del equipo de eJOY te contactará en breve** para guiarte a través del proceso de incorporación y responder cualquier pregunta.\n\n` +
             `Estamos emocionados de apoyar tu viaje.\n\n` +
-            `**¡Feliz aprendizaje!** 🎈\n` +
+            `**¡Feliz aprendizaje!** \uD83C\uDF88\n` +
             `*El equipo de eJOY*`
     }
 };
