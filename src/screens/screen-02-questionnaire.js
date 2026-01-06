@@ -361,6 +361,9 @@ function validateDateInput(dateStr) {
   const formatRegex = /^(0[1-9]|1[0-2])\/20[2-9][0-9]$/;
   if (!formatRegex.test(dateStr)) {
     if (errorEl) {
+      const userData = Storage.getUserData();
+      const lang = userData.language || 'en';
+      const content = translations.questionnaire;
       errorEl.textContent = Utils.t(content.errorFormat, lang);
       errorEl.className = 'text-xs font-medium mt-1 text-red-500 fade-in';
     }
@@ -377,6 +380,9 @@ function validateDateInput(dateStr) {
 
   if (inputDate < currentMonth) {
     if (errorEl) {
+      const userData = Storage.getUserData();
+      const lang = userData.language || 'en';
+      const content = translations.questionnaire;
       errorEl.textContent = Utils.t(content.errorPast, lang);
       errorEl.className = 'text-xs font-medium mt-1 text-red-500 fade-in';
     }
