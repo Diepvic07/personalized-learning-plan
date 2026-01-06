@@ -17,7 +17,7 @@ const DESTINATION_FOLDER_ID = '1UCDaJyrM6wZVthvFQRRPIjsKq6SbUH7k';
 // 5. Who has access: "Anyone" (or "Anyone with Google account")
 
 const CONFIG = {
-    FOLDER_ID: "1S-p6I2i95QvVewCqC-V2_OqOX20Vcy-y", // Folder to save generated plans
+    FOLDER_ID: "1b84zOJb4JaHDR2OziQOq4dTEj3Vf2l2k", // Folder to save generated plans
     TEMPLATE_ID: "1BaPRUBfuRnlj8jP6rxprpEgGzaah1oTULNr2giXNxJ8", // Main Template
     FALLBACK_TEMPLATE_ID: "1BaPRUBfuRnlj8jP6rxprpEgGzaah1oTULNr2giXNxJ8" // Fallback
 };
