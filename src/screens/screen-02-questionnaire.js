@@ -197,10 +197,10 @@ function renderQuestion6(formData, content, lang) {
         <label class="text-sm font-medium text-slate-700">${Utils.t(content.questions.q6_daily_time.label, lang)}</label>
         <span class="text-primary font-bold text-lg" id="dailyTimeDisplay">${dailyTime} ${Utils.t(content.questions.q6_daily_time.unit, lang)}</span>
       </div>
-      <input type="range" id="dailyTime" name="dailyTime" min="0.25" max="8" step="0.25" value="${dailyTime}" class="w-full" oninput="document.getElementById('dailyTimeDisplay').textContent = this.value + ' ${Utils.t(content.questions.q6_daily_time.unit, lang)}'"/>
+      <input type="range" id="dailyTime" name="dailyTime" min="0.25" max="5" step="0.25" value="${dailyTime}" class="w-full" oninput="document.getElementById('dailyTimeDisplay').textContent = this.value + ' ${Utils.t(content.questions.q6_daily_time.unit, lang)}'"/>
       <div class="flex justify-between text-xs text-slate-400 font-medium px-1">
         <span>0.25h</span>
-        <span>8h</span>
+        <span>5h</span>
       </div>
       <!-- Feasibility Feedback -->
       <div id="feasibility-feedback" class="transition-all duration-300 empty:hidden"></div>
