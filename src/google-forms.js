@@ -180,7 +180,10 @@ const GoogleForms = {
                 planId: userData.planId || '',
                 nativeLanguage: userData.nativeLanguage || 'en',
                 templateId: userData.templateId || '',
-                requiredHours: userData.requiredHours || '' // Pass requiredHours
+                requiredHours: userData.requiredHours || '',
+                currentLevel: userData.currentLevel || '',
+                targetLevel: userData.targetLevel || '',
+                targetDate: userData.targetDate || ''
             });
 
             const url = `${scriptUrl}?${params.toString()}`;
