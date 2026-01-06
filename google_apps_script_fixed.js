@@ -18,8 +18,8 @@ const DESTINATION_FOLDER_ID = '1UCDaJyrM6wZVthvFQRRPIjsKq6SbUH7k';
 
 const CONFIG = {
     FOLDER_ID: "1b84zOJb4JaHDR2OziQOq4dTEj3Vf2l2k", // Folder to save generated plans
-    TEMPLATE_ID: "1BaPRUBfuRnlj8jP6rxprpEgGzaah1oTULNr2giXNxJ8", // Main Template
-    FALLBACK_TEMPLATE_ID: "1BaPRUBfuRnlj8jP6rxprpEgGzaah1oTULNr2giXNxJ8" // Fallback
+    TEMPLATE_ID: "1UFR2una3soX22P_BYrZK0QLJ42CTocMSEJkqkPB9U0c", // Main Template
+    FALLBACK_TEMPLATE_ID: "1UFR2una3soX22P_BYrZK0QLJ42CTocMSEJkqkPB9U0c" // Fallback
 };
 
 // Plan Titles Mapping (Same as before)
