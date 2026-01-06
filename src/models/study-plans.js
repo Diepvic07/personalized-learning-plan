@@ -321,7 +321,7 @@ const PLANS = {
         levels: ["B1", "B2"],
         deviceGroup: "B",
         doc_en: "1yWlKVjUilUnJuqe4SeTAX-LXnGUIdY9cqb4hDCDxs2g",
-        doc_vn: "1yWlKVjUilUnJuqe4SeTAX-LXnGUIdY9cqb4hDCDxs2g",
+        doc_vn: "1CFleDAbthotZ9-HIMOd1olIqPGUjCRnCnUjjUxToifU",
         phases_en: [
             {
                 name: "Phase 1",
