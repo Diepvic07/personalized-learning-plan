@@ -196,9 +196,9 @@ var translations = {
             },
             q4_why: {
                 label: {
-                    en: "Please specify your goal",
-                    vi: "Vui lòng chỉ rõ mục tiêu của bạn",
-                    es: "Por favor, especifica tu meta"
+                    en: "Why do you want to improve your English?",
+                    vi: "Mục tiêu cải thiện tiếng Anh của bạn",
+                    es: "¿Por qué quieres mejorar tu inglés?"
                 },
                 options: {
                     everyday: {
@@ -246,7 +246,7 @@ var translations = {
             q5_target_date: {
                 timelineTitle: {
                     en: "Timeline",
-                    vi: "Dòng thời gian",
+                    vi: "Thời gian",
                     es: "Línea de tiempo"
                 },
                 label: {
@@ -319,9 +319,9 @@ var translations = {
                 },
                 options: {
                     read_native: {
-                        en: "I usually read in my native language",
-                        vi: "Tôi thường đọc bằng tiếng mẹ đẻ",
-                        es: "Normalmente leo en mi idioma nativo"
+                        en: "I rarely read in English",
+                        vi: "Tôi hiếm khi đọc bằng tiếng Anh",
+                        es: "Normalmente leo en inglés"
                     },
                     read_english: {
                         en: "I usually read in English",
@@ -329,9 +329,9 @@ var translations = {
                         es: "Normalmente leo en inglés"
                     },
                     watch_native: {
-                        en: "I usually watch YouTube or movies in my native language",
-                        vi: "Tôi thường xem YouTube hoặc phim bằng tiếng mẹ đẻ",
-                        es: "Normalmente veo YouTube o películas en mi idioma nativo"
+                        en: "I rarely watch YouTube or movies in English",
+                        vi: "Tôi hiếm khi xem YouTube hoặc phim bằng tiếng Anh",
+                        es: "Rara vez veo YouTube o películas en inglés"
                     },
                     watch_english: {
                         en: "I usually watch YouTube or movies in English",

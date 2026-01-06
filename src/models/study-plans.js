@@ -18,7 +18,7 @@ const PLANS = {
         doc_vn: "124lVkO8ZVaWRXLcVQSxOO5khkfohLKNJCg0T95UNudk",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 lesson in Basic - Every English 1 course.",
                     "Listen to an English video",
@@ -27,7 +27,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Basic English (~200 hours)",
                 tasks: [
                     "Certificates for Basic Everyday English course 1",
                     "Certificates for Basic Everyday English course 2",
@@ -38,7 +38,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 3",
+                name: "Phase 3 - Advanced English (~200 hours)",
                 tasks: [
                     "Certificates for Intermediate Everyday English course 1",
                     "Certificates for Intermediate Everyday English course 2",
@@ -54,7 +54,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài trong khóa Basic - Every English 1.",
                     "Nghe 1 video tiếng Anh",
@@ -63,7 +63,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh cơ bản (~200 giờ)",
                 tasks: [
                     "Chứng nhận hoàn thành khóa Basic Everyday English 1",
                     "Chứng nhận hoàn thành khóa Basic Everyday English 2",
@@ -74,7 +74,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 3",
+                name: "Giai đoạn 3 - Tiếng Anh nâng cao (~200 giờ)",
                 tasks: [
                     "Chứng nhận hoàn thành khóa Intermediate Everyday English 1",
                     "Chứng nhận hoàn thành khóa Intermediate Everyday English 2",
@@ -90,7 +90,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección en el curso Basic - Every English 1.",
                     "Escucha un video en inglés",
@@ -99,7 +99,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés básico (~200 horas)",
                 tasks: [
                     "Certificados del curso Basic Everyday English 1",
                     "Certificados del curso Basic Everyday English 2",
@@ -110,7 +110,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 3",
+                name: "Fase 3 - Inglés avanzado (~200 horas)",
                 tasks: [
                     "Certificados del curso Intermediate Everyday English 1",
                     "Certificados del curso Intermediate Everyday English 2",
@@ -135,7 +135,7 @@ const PLANS = {
         doc_vn: "1KyrV1XUIQ44G7ukdL2sCD9EvEpphgc-yaV_5IHkmdM0",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 lesson in Basic - Every English 1 course.",
                     "Listen to an English video",
@@ -144,7 +144,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Advanced English (~200 hours)",
                 tasks: [
                     "Certificates for Intermediate Everyday English course 1",
                     "Certificates for Intermediate Everyday English course 2",
@@ -160,7 +160,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài trong khóa Basic - Every English 1.",
                     "Nghe 1 video tiếng Anh",
@@ -169,7 +169,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh nâng cao (~200 giờ)",
                 tasks: [
                     "Chứng nhận hoàn thành khóa Intermediate Everyday English 1",
                     "Chứng nhận hoàn thành khóa Intermediate Everyday English 2",
@@ -185,7 +185,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección en el curso Basic - Every English 1.",
                     "Escucha un video en inglés",
@@ -194,7 +194,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés avanzado (~200 horas)",
                 tasks: [
                     "Certificados del curso Intermediate Everyday English 1",
                     "Certificados del curso Intermediate Everyday English 2",
@@ -219,7 +219,7 @@ const PLANS = {
         doc_vn: "1dUGz_EDstz7IxJGqMKfAkTxlQAzh_6hnFDwYPra3Qpg",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 EPIC lesson beginner",
                     "Listen to an English video",
@@ -228,7 +228,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Basic English (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC lessons for beginners",
                     "Complete Listening Comprehension of 203 videos in English communication video collection.",
@@ -237,7 +237,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 3",
+                name: "Phase 3 - Advanced English (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC lessons for intermediates",
                     "Complete Listening Comprehension of the Ted Talks in brief video collection",
@@ -251,7 +251,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài EPIC cho người mới bắt đầu",
                     "Nghe 1 video tiếng Anh",
@@ -260,7 +260,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh cơ bản (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học EPIC cho người mới bắt đầu",
                     "Hoàn thành Luyện nghe hiểu 203 video trong bộ video giao tiếp tiếng Anh.",
@@ -269,7 +269,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 3",
+                name: "Giai đoạn 3 - Tiếng Anh nâng cao (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học EPIC cho trình độ trung cấp",
                     "Hoàn thành Luyện nghe hiểu bộ video Ted Talks in brief",
@@ -283,7 +283,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección EPIC para principiantes",
                     "Escucha un video en inglés",
@@ -292,7 +292,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés básico (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones EPIC para principiantes",
                     "Completa la Comprensión Auditiva de 203 videos en la colección de comunicación en inglés.",
@@ -301,7 +301,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 3",
+                name: "Fase 3 - Inglés avanzado (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones EPIC para intermedios",
                     "Completa la Comprensión Auditiva de la colección Ted Talks in brief",
@@ -324,7 +324,7 @@ const PLANS = {
         doc_vn: "1CFleDAbthotZ9-HIMOd1olIqPGUjCRnCnUjjUxToifU",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 lesson in Basic - Every English 1 course.",
                     "Listen to an English video",
@@ -333,7 +333,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Advanced English (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC lessons for intermediates",
                     "Master 500 IELTS words",
@@ -347,7 +347,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài trong khóa Basic - Every English 1.",
                     "Nghe 1 video tiếng Anh",
@@ -356,7 +356,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh nâng cao (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học EPIC cho trình độ trung cấp",
                     "Nắm vững 500 từ vựng IELTS",
@@ -370,7 +370,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección en el curso Basic - Every English 1.",
                     "Escucha un video en inglés",
@@ -379,7 +379,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés avanzado (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones EPIC para intermedios",
                     "Domina 500 palabras de IELTS",
@@ -406,7 +406,7 @@ const PLANS = {
         doc_vn: "1UFR2una3soX22P_BYrZK0QLJ42CTocMSEJkqkPB9U0c",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 lesson in Basic - Every English 1 course",
                     "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
@@ -415,7 +415,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Basic English / 5.0 IELTS (~200 hours)",
                 tasks: [
                     "Achieve completion certificate for Basic - Every English 1 course.",
                     "Achieve completion certificate for Basic - Every English 2 course.",
@@ -428,7 +428,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 3",
+                name: "Phase 3 - Advanced English / 6.5+ IELTS (~200 hours)",
                 tasks: [
                     "Achieve completion certificate for Intermediate - Every English 1 course.",
                     "Achieve completion certificate for Intermediate - Every English 2 course.",
@@ -444,7 +444,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài trong khóa Basic - Every English 1",
                     "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
@@ -453,7 +453,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh cơ bản / 5.0 IELTS (~200 giờ)",
                 tasks: [
                     "Đạt chứng nhận hoàn thành khóa Basic - Every English 1.",
                     "Đạt chứng nhận hoàn thành khóa Basic - Every English 2.",
@@ -466,7 +466,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 3",
+                name: "Giai đoạn 3 - Tiếng Anh nâng cao / 6.5+ IELTS (~200 giờ)",
                 tasks: [
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
@@ -482,7 +482,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección en el curso Basic - Every English 1",
                     "Escucha 1 video de YouTube o de la colección 200h English communication",
@@ -491,7 +491,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés básico / 5.0 IELTS (~200 horas)",
                 tasks: [
                     "Obtener certificado del curso Basic - Every English 1.",
                     "Obtener certificado del curso Basic - Every English 2.",
@@ -504,7 +504,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 3",
+                name: "Fase 3 - Inglés avanzado / 6.5+ IELTS (~200 horas)",
                 tasks: [
                     "Obtener certificado del curso Intermediate - Every English 1.",
                     "Obtener certificado del curso Intermediate - Every English 2.",
@@ -529,7 +529,7 @@ const PLANS = {
         doc_vn: "1V-lPU9gsZpV1Dx0S7LDV_uVQ8fOIeoKrWrNvs8KTriA",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 lesson in Intermediate - Every English 1 course",
                     "Listen to 1 YouTube video or a video in the Ted Talks in brief",
@@ -538,7 +538,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Advanced English / 6.5+ IELTS (~200 hours)",
                 tasks: [
                     "Achieve completion certificate for Intermediate - Every English 1 course.",
                     "Achieve completion certificate for Intermediate - Every English 2 course.",
@@ -555,7 +555,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài trong khóa Intermediate - Every English 1",
                     "Nghe 1 video YouTube hoặc video trong bộ Ted Talks in brief",
@@ -564,7 +564,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh nâng cao / 6.5+ IELTS (~200 giờ)",
                 tasks: [
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
@@ -581,7 +581,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección en el curso Intermediate - Every English 1",
                     "Escucha 1 video de YouTube o un video de Ted Talks in brief",
@@ -590,7 +590,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés avanzado / 6.5+ IELTS (~200 horas)",
                 tasks: [
                     "Obtener certificado del curso Intermediate - Every English 1.",
                     "Obtener certificado del curso Intermediate - Every English 2.",
@@ -616,7 +616,7 @@ const PLANS = {
         doc_vn: "1Das9kJiZToWVXxf1Pn79qfCWf9A6GDwJyGBiIZhe42Y",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 EPIC lesson for beginner level",
                     "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
@@ -625,7 +625,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Basic English / 5.0 IELTS (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC video lessons for beginners",
                     "Complete 200h English communication - high beginner video collection.",
@@ -636,7 +636,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 3",
+                name: "Phase 3 - Advanced English / 6.5+ IELTS (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC video lessons for intermediates",
                     "Complete Listening Comprehension of the Ted Talk video collection",
@@ -650,7 +650,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài EPIC cho người mới bắt đầu",
                     "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
@@ -659,7 +659,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh cơ bản / 5.0 IELTS (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học video EPIC cho người mới bắt đầu",
                     "Hoàn thành bộ video 200h giao tiếp tiếng Anh - sơ cấp cao.",
@@ -670,7 +670,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 3",
+                name: "Giai đoạn 3 - Tiếng Anh nâng cao / 6.5+ IELTS (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
                     "Hoàn thành Luyện nghe hiểu bộ video Ted Talk",
@@ -684,7 +684,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección EPIC para principiantes",
                     "Escucha 1 video de YouTube o de la colección 200h English communication",
@@ -693,7 +693,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés básico / 5.0 IELTS (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones de video EPIC para principiantes",
                     "Completar la colección de videos 200h English communication - principiante alto.",
@@ -704,7 +704,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 3",
+                name: "Fase 3 - Inglés avanzado / 6.5+ IELTS (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones de video EPIC para intermedios",
                     "Completar la Comprensión Auditiva de la colección Ted Talk",
@@ -727,7 +727,7 @@ const PLANS = {
         doc_vn: "1aqcRfcqp_bCFt8Dkb0DSRZbJeIzHqIOD6SCi9fb4Fls",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 EPIC lesson for intermediate level",
                     "Listen to 1 YouTube video or a video in the Ted Talks in brief",
@@ -736,7 +736,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Advanced English / 6.5+ IELTS (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC video lessons for intermediates",
                     "Complete Listening Comprehension of the Ted Talks in brief video collection",
@@ -751,7 +751,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài EPIC cho trình độ trung cấp",
                     "Nghe 1 video YouTube hoặc video trong bộ Ted Talks in brief",
@@ -760,7 +760,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh nâng cao / 6.5+ IELTS (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
                     "Hoàn thành Luyện nghe hiểu bộ video Ted Talks in brief",
@@ -775,7 +775,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección EPIC para intermedios",
                     "Escucha 1 video de YouTube o un video de Ted Talks in brief",
@@ -784,7 +784,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés avanzado / 6.5+ IELTS (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones de video EPIC para intermedios",
                     "Completar la Comprensión Auditiva de la colección Ted Talks in brief",
@@ -812,7 +812,7 @@ const PLANS = {
         doc_vn: "1lpq_9WXQIzhIwlGchlNXMVbcNdZttd1VWXIyb0qNV4k",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 lesson in Basic - Every English 1 course",
                     "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
@@ -821,7 +821,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Basic English / 500-700 TOEIC (~200 hours)",
                 tasks: [
                     "Achieve completion certificate for Basic - Every English 1 course.",
                     "Achieve completion certificate for Basic - Every English 2 course.",
@@ -832,7 +832,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 3",
+                name: "Phase 3 - Advanced English / 700-900 TOEIC (~200 hours)",
                 tasks: [
                     "Achieve completion certificate for Intermediate - Every English 1 course.",
                     "Achieve completion certificate for Intermediate - Every English 2 course.",
@@ -846,7 +846,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài trong khóa Basic - Every English 1",
                     "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
@@ -855,7 +855,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh cơ bản / 500-700 TOEIC (~200 giờ)",
                 tasks: [
                     "Đạt chứng nhận hoàn thành khóa Basic - Every English 1.",
                     "Đạt chứng nhận hoàn thành khóa Basic - Every English 2.",
@@ -866,7 +866,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 3",
+                name: "Giai đoạn 3 - Tiếng Anh nâng cao / 700-900 TOEIC (~200 giờ)",
                 tasks: [
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
@@ -880,7 +880,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección en el curso Basic - Every English 1",
                     "Escucha 1 video de YouTube o de la colección 200h English communication",
@@ -889,7 +889,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés básico / 500-700 TOEIC (~200 horas)",
                 tasks: [
                     "Obtener certificado del curso Basic - Every English 1.",
                     "Obtener certificado del curso Basic - Every English 2.",
@@ -900,7 +900,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 3",
+                name: "Fase 3 - Inglés avanzado / 700-900 TOEIC (~200 horas)",
                 tasks: [
                     "Obtener certificado del curso Intermediate - Every English 1.",
                     "Obtener certificado del curso Intermediate - Every English 2.",
@@ -923,7 +923,7 @@ const PLANS = {
         doc_vn: "1LPpcZrEaqxlUlbAsITPLjnfLxjs4Lb9SAe7soaFnNz4",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 lesson in Intermediate - Every English 1 course",
                     "Listen to 1 YouTube video or a video in TOEIC preparation",
@@ -932,7 +932,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Advanced English / 700-900 TOEIC (~200 hours)",
                 tasks: [
                     "Achieve completion certificate for Intermediate - Every English 1 course.",
                     "Achieve completion certificate for Intermediate - Every English 2 course.",
@@ -946,7 +946,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài trong khóa Intermediate - Every English 1",
                     "Nghe 1 video YouTube hoặc video trong bộ TOEIC preparation",
@@ -955,7 +955,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh nâng cao / 700-900 TOEIC (~200 giờ)",
                 tasks: [
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 1.",
                     "Đạt chứng nhận hoàn thành khóa Intermediate - Every English 2.",
@@ -969,7 +969,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección en el curso Intermediate - Every English 1",
                     "Escucha 1 video de YouTube o de la colección TOEIC preparation",
@@ -978,7 +978,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Advanced English / 700-900 TOEIC (~200 horas)",
                 tasks: [
                     "Obtener certificado del curso Intermediate - Every English 1.",
                     "Obtener certificado del curso Intermediate - Every English 2.",
@@ -1001,7 +1001,7 @@ const PLANS = {
         doc_vn: "1_oQNvib44V9SfQgf7Z_LlC-p0u8IYv7UrLNs8oae56Y",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 EPIC lesson for beginner level",
                     "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
@@ -1010,7 +1010,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Basic English / 500-700 TOEIC (~200 hours)",
                 tasks: [
                     "Complete Listening & Pronunciation For Beginners Video Collection.",
                     "Complete 100 EPIC video lessons for beginners",
@@ -1020,7 +1020,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 3",
+                name: "Phase 3 - Advanced English / 700-900 TOEIC (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC video lessons for intermediates",
                     "Complete Listening Comprehension of TOEIC preparation video collection",
@@ -1032,7 +1032,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài EPIC cho người mới bắt đầu",
                     "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
@@ -1041,7 +1041,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh cơ bản / 500-700 TOEIC (~200 giờ)",
                 tasks: [
                     "Hoàn thành bộ video Luyện nghe & Phát âm cho người mới bắt đầu.",
                     "Hoàn thành 100 bài học video EPIC cho người mới bắt đầu",
@@ -1051,7 +1051,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 3",
+                name: "Giai đoạn 3 - Tiếng Anh nâng cao / 700-900 TOEIC (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
                     "Hoàn thành Luyện nghe hiểu bộ video TOEIC preparation",
@@ -1063,7 +1063,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección EPIC para principiantes",
                     "Escucha 1 video de YouTube o de la colección 200h English communication",
@@ -1072,7 +1072,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés básico / 500-700 TOEIC (~200 horas)",
                 tasks: [
                     "Completar la colección de videos de Comprensión Auditiva y Pronunciación para principiantes.",
                     "Completa 100 lecciones de video EPIC para principiantes",
@@ -1082,7 +1082,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 3",
+                name: "Fase 3 - Inglés avanzado / 700-900 TOEIC (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones de video EPIC para intermedios",
                     "Completar la Comprensión Auditiva de la colección TOEIC preparation",
@@ -1103,7 +1103,7 @@ const PLANS = {
         doc_vn: "1Swai0tuB5WB2C94pJPM8fBQ928B15JHZ82x0jo51KNY",
         phases_en: [
             {
-                name: "Phase 1",
+                name: "Phase 1 - Habit Formation (30 days)",
                 tasks: [
                     "Study 1 EPIC lesson for intermediate level",
                     "Listen to 1 YouTube video or a video in the 200h English communication - high beginner",
@@ -1112,7 +1112,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Phase 2",
+                name: "Phase 2 - Advanced English / 700-900 TOEIC (~200 hours)",
                 tasks: [
                     "Complete 100 EPIC video lessons for intermediates",
                     "Complete Listening Comprehension of TOEIC preparation video collection",
@@ -1124,7 +1124,7 @@ const PLANS = {
         ],
         phases_vi: [
             {
-                name: "Giai đoạn 1",
+                name: "Giai đoạn 1 - Hình thành thói quen (30 ngày)",
                 tasks: [
                     "Học 1 bài EPIC cho trình độ trung cấp",
                     "Nghe 1 video YouTube hoặc video trong bộ 200h giao tiếp tiếng Anh - sơ cấp cao",
@@ -1133,7 +1133,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Giai đoạn 2",
+                name: "Giai đoạn 2 - Tiếng Anh nâng cao / 700-900 TOEIC (~200 giờ)",
                 tasks: [
                     "Hoàn thành 100 bài học video EPIC cho trình độ trung cấp",
                     "Hoàn thành Luyện nghe hiểu bộ video TOEIC preparation",
@@ -1145,7 +1145,7 @@ const PLANS = {
         ],
         phases_es: [
             {
-                name: "Fase 1",
+                name: "Fase 1 - Formación de hábitos (30 días)",
                 tasks: [
                     "Estudia 1 lección EPIC para intermedios",
                     "Escucha 1 video de YouTube o de la colección 200h English communication",
@@ -1154,7 +1154,7 @@ const PLANS = {
                 ]
             },
             {
-                name: "Fase 2",
+                name: "Fase 2 - Inglés avanzado / 700-900 TOEIC (~200 horas)",
                 tasks: [
                     "Completa 100 lecciones de video EPIC para intermedios",
                     "Completar la Comprensión Auditiva de la colección TOEIC preparation",
