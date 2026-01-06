@@ -14,8 +14,9 @@ function renderFirstLesson() {
     (formData.methods || []).some(m => m.includes('YouTube') || m.includes('movies'));
 
   const planId = userData.selectedPlanId;
-  // Only Plan 2 and Plan 4 are Communication Intermediate (per spec)
-  const isCommunicationIntermediate = planId === 2 || planId === 4;
+
+  // Plans 2, 4, 6, 8, 10, 12 are Communication Intermediate
+  const isCommunicationIntermediate = [2, 4, 6, 8, 10, 12].includes(planId);
 
   if (hasVideoHabit && isCommunicationIntermediate) {
     renderAIRoleplay(lang);
@@ -185,8 +186,9 @@ window.openFirstLesson = function () {
     (formData.methods || []).some(m => m.includes('YouTube') || m.includes('movies'));
 
   const planId = userData.selectedPlanId;
-  // Only Plan 2 and Plan 4 are Communication Intermediate (per spec)
-  const isCommunicationIntermediate = planId === 2 || planId === 4;
+
+  // Plans 2, 4, 6, 8, 10, 12 are Communication Intermediate
+  const isCommunicationIntermediate = [2, 4, 6, 8, 10, 12].includes(planId);
 
   // Determine the lesson URL
   let lessonUrl;

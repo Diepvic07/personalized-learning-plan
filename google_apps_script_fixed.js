@@ -41,42 +41,72 @@ const PLAN_TITLES = {
 const EMAIL_TEMPLATES = {
     en: {
         subject: "Your Personalized English Learning Plan is Ready!",
-        body: (name, link) => `Hi ${name},\n\n` +
+        textBody: (name, link) => `Hi ${name},\n\n` +
             `Congratulations on prioritizing your personal growth! Your commitment to learning is the first step toward future success.\n\n` +
-            `### Your Personalized Plan\n` +
+            `Your Personalized Plan\n` +
             `Based on your responses, here is the study plan we've crafted for you:\n` +
-            `**[Link to Google Doc: Your Learning Plan](${link})**\n\n` +
-            `### What's Next?\n` +
-            `To help you start strong, **an eJOY team member will contact you shortly** to guide you through the onboarding process and answer any questions.\n\n` +
+            `Link to Google Doc: Your Learning Plan: ${link}\n\n` +
+            `What's Next?\n` +
+            `To help you start strong, an eJOY team member will contact you shortly to guide you through the onboarding process and answer any questions.\n\n` +
             `We're excited to support your journey.\n\n` +
-            `**Happy Learning!**\n` +
-            `*The eJOY Team*`
+            `Happy Learning!\n` +
+            `The eJOY Team`,
+        htmlBody: (name, link) => `<p>Hi ${name},</p>` +
+            `<p>Congratulations on prioritizing your personal growth! Your commitment to learning is the first step toward future success.</p>` +
+            `<h3>Your Personalized Plan</h3>` +
+            `<p>Based on your responses, here is the study plan we've crafted for you:</p>` +
+            `<p><strong><a href="${link}">Link to Google Doc: Your Learning Plan</a></strong></p>` +
+            `<h3>What's Next?</h3>` +
+            `<p>To help you start strong, <strong>an eJOY team member will contact you shortly</strong> to guide you through the onboarding process and answer any questions.</p>` +
+            `<p>We're excited to support your journey.</p>` +
+            `<p><strong>Happy Learning!</strong><br>` +
+            `<em>The eJOY Team</em></p>`
     },
     vi: {
         subject: "Kế hoạch học tiếng Anh cá nhân hóa của bạn đã sẵn sàng!",
-        body: (name, link) => `Chào ${name},\n\n` +
+        textBody: (name, link) => `Chào ${name},\n\n` +
             `Chúc mừng bạn đã ưu tiên sự phát triển bản thân! Cam kết học tập của bạn là bước đầu tiên hướng tới thành công trong tương lai.\n\n` +
-            `### Kế hoạch cá nhân hóa của bạn\n` +
+            `Kế hoạch cá nhân hóa của bạn\n` +
             `Dựa trên câu trả lời của bạn, đây là lộ trình học tập chúng tôi đã xây dựng cho bạn:\n` +
-            `**[Link Google Doc: Kế hoạch học tập của bạn](${link})**\n\n` +
-            `### Bước tiếp theo là gì?\n` +
-            `Để giúp bạn khởi đầu thuận lợi, **một thành viên của đội ngũ eJOY sẽ sớm liên hệ với bạn** để hướng dẫn quy trình giới thiệu và giải đáp mọi thắc mắc.\n\n` +
+            `Link Google Doc: Kế hoạch học tập của bạn: ${link}\n\n` +
+            `Bước tiếp theo là gì?\n` +
+            `Để giúp bạn khởi đầu thuận lợi, một thành viên của đội ngũ eJOY sẽ sớm liên hệ với bạn để hướng dẫn quy trình giới thiệu và giải đáp mọi thắc mắc.\n\n` +
             `Chúng tôi rất hào hứng được đồng hành cùng bạn.\n\n` +
-            `**Chúc bạn học tốt!**\n` +
-            `*Đội ngũ eJOY*`
+            `Chúc bạn học tốt!\n` +
+            `Đội ngũ eJOY`,
+        htmlBody: (name, link) => `<p>Chào ${name},</p>` +
+            `<p>Chúc mừng bạn đã ưu tiên sự phát triển bản thân! Cam kết học tập của bạn là bước đầu tiên hướng tới thành công trong tương lai.</p>` +
+            `<h3>Kế hoạch cá nhân hóa của bạn</h3>` +
+            `<p>Dựa trên câu trả lời của bạn, đây là lộ trình học tập chúng tôi đã xây dựng cho bạn:</p>` +
+            `<p><strong><a href="${link}">Link Google Doc: Kế hoạch học tập của bạn</a></strong></p>` +
+            `<h3>Bước tiếp theo là gì?</h3>` +
+            `<p>Để giúp bạn khởi đầu thuận lợi, <strong>một thành viên của đội ngũ eJOY sẽ sớm liên hệ với bạn</strong> để hướng dẫn quy trình giới thiệu và giải đáp mọi thắc mắc.</p>` +
+            `<p>Chúng tôi rất hào hứng được đồng hành cùng bạn.</p>` +
+            `<p><strong>Chúc bạn học tốt!</strong><br>` +
+            `<em>Đội ngũ eJOY</em></p>`
     },
     es: {
         subject: "¡Tu plan de aprendizaje de inglés personalizado está listo!",
-        body: (name, link) => `Hola ${name},\n\n` +
+        textBody: (name, link) => `Hola ${name},\n\n` +
             `¡Felicitaciones por priorizar tu crecimiento personal! Tu compromiso con el aprendizaje es el primer paso hacia el éxito futuro.\n\n` +
-            `### Tu plan personalizado\n` +
+            `Tu plan personalizado\n` +
             `Basado en tus respuestas, aquí tienes el plan de estudio que hemos elaborado para ti:\n` +
-            `**[Enlace a Google Doc: Tu plan de aprendizaje](${link})**\n\n` +
-            `### ¿Qué sigue?\n` +
-            `Para ayudarte a comenzar con fuerza, **un miembro del equipo de eJOY te contactará en breve** para guiarte a través del proceso de incorporación y responder cualquier pregunta.\n\n` +
+            `Enlace a Google Doc: Tu plan de aprendizaje: ${link}\n\n` +
+            `¿Qué sigue?\n` +
+            `Para ayudarte a comenzar con fuerza, un miembro del equipo de eJOY te contactará en breve para guiarte a través del proceso de incorporación y responder cualquier pregunta.\n\n` +
             `Estamos emocionados de apoyar tu viaje.\n\n` +
-            `**¡Feliz aprendizaje!**\n` +
-            `*El equipo de eJOY*`
+            `¡Feliz aprendizaje!\n` +
+            `El equipo de eJOY`,
+        htmlBody: (name, link) => `<p>Hola ${name},</p>` +
+            `<p>¡Felicitaciones por priorizar tu crecimiento personal! Tu compromiso con el aprendizaje es el primer paso hacia el éxito futuro.</p>` +
+            `<h3>Tu plan personalizado</h3>` +
+            `<p>Basado en tus respuestas, aquí tienes el plan de estudio que hemos elaborado para ti:</p>` +
+            `<p><strong><a href="${link}">Enlace a Google Doc: Tu plan de aprendizaje</a></strong></p>` +
+            `<h3>¿Qué sigue?</h3>` +
+            `<p>Para ayudarte a comenzar con fuerza, <strong>un miembro del equipo de eJOY te contactará en breve</strong> para guiarte a través del proceso de incorporación y responder cualquier pregunta.</p>` +
+            `<p>Estamos emocionados de apoyar tu viaje.</p>` +
+            `<p><strong>¡Feliz aprendizaje!</strong><br>` +
+            `<em>El equipo de eJOY</em></p>`
     }
 };
 
@@ -171,9 +201,12 @@ function doGet(e) {
 
         const displayName = userName || (langCode === 'vi' ? 'bạn' : (langCode === 'es' ? 'usuario' : 'there'));
         const emailSubject = template.subject;
-        const emailBody = template.body(displayName, docUrl);
+        const textBody = template.textBody(displayName, docUrl);
+        const htmlBody = template.htmlBody(displayName, docUrl);
 
-        GmailApp.sendEmail(userEmail, emailSubject, emailBody);
+        GmailApp.sendEmail(userEmail, emailSubject, textBody, {
+            htmlBody: htmlBody
+        });
 
         // 7. Return Result
         return ContentService.createTextOutput(JSON.stringify({
