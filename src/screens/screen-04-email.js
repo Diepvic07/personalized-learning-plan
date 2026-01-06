@@ -173,7 +173,10 @@ window.handleEmailFormSubmit = async function (event) {
       planId: planId,
       nativeLanguage: contactData.nativeLanguage || userData.nativeLanguage,
       templateId: templateIdToUse,
-      requiredHours: requiredHours
+      requiredHours: requiredHours,
+      currentLevel: userData.formData?.currentLevel,
+      targetLevel: userData.formData?.targetLevel,
+      targetDate: userData.formData?.targetDate
     });
   }
 
