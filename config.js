@@ -7,7 +7,7 @@ const CONFIG = {
   // Google Form Configuration
   googleForm: {
     baseUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSd9vivOwgfgdXVWmWCT0AJZ0nd_zYbMXpi87UjoaWDRypf3uw/formResponse',
-    scriptUrl: '', // TODO: [USER] Add your Web App URL here after deployment
+    scriptUrl: 'https://script.google.com/macros/s/AKfycbzoVjB6iaTgpq2GJ8om0LsxgM98QUPLl_rPjBJdVJ40LRvlDFjkZIW5L7F_7qoSpRVcFw/exec', // TODO: [USER] Add your Web App URL here after deployment
     fields: {
       nativeLanguage: 'entry.1104628968',
       currentLevel: 'entry.20025655',
