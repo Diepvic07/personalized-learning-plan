@@ -152,13 +152,28 @@ window.handleEmailFormSubmit = async function (event) {
   // This ensures the link in the form matches the email link
   let generatedDocLink = null;
 
+  if (!CONFIG.googleForm.scriptUrl) {
+    alert("CONFIGURATION ERROR: scriptUrl is MISSING in config.js.");
+    showEmailError("Configuration Error: Missing scriptUrl");
+    return;
+  }
+
   if (CONFIG.googleForm.scriptUrl) {
+    // Resolve Template ID
+    let templateIdToUse = null;
+    if (planId !== 'no-match' && PLANS && PLANS[planId]) {
+      const plan = PLANS[planId];
+      templateIdToUse = (docLang === 'vi') ? plan.doc_vn : plan.doc_en;
+    }
+
     showLoading(lang === 'vi' ? 'Đang tạo kế hoạch...' : lang === 'es' ? 'Creando plan...' : 'Creating plan...');
     generatedDocLink = await GoogleForms.generatePersonalPlan({
       name: contactData.name,
       email: contactData.email,
       planId: planId,
-      nativeLanguage: contactData.nativeLanguage || userData.nativeLanguage
+      nativeLanguage: contactData.nativeLanguage || userData.nativeLanguage,
+      templateId: templateIdToUse,
+      requiredHours: requiredHours
     });
   }
 
