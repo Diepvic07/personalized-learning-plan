@@ -48,7 +48,7 @@ function renderLanguageSelection() {
           <div class="relative group cursor-pointer" onclick="selectLanguageOption('vietnamese')">
             <div class="flex items-center justify-between gap-4 rounded-xl border-2 ${userData.nativeLanguage === 'vietnamese' ? 'border-primary bg-primary/5' : 'border-transparent bg-white dark:bg-[#1a2632]'} p-4 shadow-sm transition-all duration-200" id="lang-vietnamese">
               <div class="flex items-center gap-4">
-                <div class="h-10 w-14 rounded bg-center bg-cover shadow-sm flex-shrink-0" style='background-image: url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 20\'%3E%3Crect fill=\'%23da251d\' width=\'30\' height=\'20\'/%3E%3Cpolygon fill=\'%23ff0\' points=\'15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85\'/%3E%3C/svg%3E");'></div>
+                <div class="h-10 w-14 rounded bg-gray-100 flex items-center justify-center text-3xl shadow-sm flex-shrink-0">🇻🇳</div>
                 <p class="text-[#111418] dark:text-white text-lg font-bold leading-tight">${Utils.t(content.options.vietnamese, currentLang)}</p>
               </div>
               <span class="material-symbols-outlined text-primary text-2xl font-bold ${userData.nativeLanguage === 'vietnamese' ? '' : 'hidden'}" id="check-vietnamese">check_circle</span>
@@ -60,7 +60,7 @@ function renderLanguageSelection() {
           <div class="relative group cursor-pointer" onclick="selectLanguageOption('spanish')">
             <div class="flex items-center justify-between gap-4 rounded-xl border-2 ${userData.nativeLanguage === 'spanish' ? 'border-primary bg-primary/5' : 'border-transparent bg-white dark:bg-[#1a2632]'} p-4 shadow-sm transition-all duration-200" id="lang-spanish">
               <div class="flex items-center gap-4">
-                <div class="h-10 w-14 rounded bg-center bg-cover shadow-sm flex-shrink-0" style='background-image: url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 750 500\'%3E%3Crect fill=\'%23c60b1e\' width=\'750\' height=\'500\'/%3E%3Crect fill=\'%23ffc400\' y=\'125\' width=\'750\' height=\'250\'/%3E%3C/svg%3E");'></div>
+                <div class="h-10 w-14 rounded bg-gray-100 flex items-center justify-center text-3xl shadow-sm flex-shrink-0">🇪🇸</div>
                 <p class="text-[#111418] dark:text-white text-lg font-medium leading-tight">${Utils.t(content.options.spanish, currentLang)}</p>
               </div>
               <span class="material-symbols-outlined text-primary text-2xl font-bold ${userData.nativeLanguage === 'spanish' ? '' : 'hidden'}" id="check-spanish">check_circle</span>
