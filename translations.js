@@ -260,9 +260,9 @@ var translations = {
                     es: "MM/YYYY"
                 },
                 errorFormat: {
-                    en: "Format must be MM/YYYY (e.g. 12/2026)",
-                    vi: "Định dạng phải là MM/YYYY (VD: 12/2026)",
-                    es: "El formato debe ser MM/YYYY (ej. 12/2026)"
+                    en: "Please use MM/YYYY format (e.g. 09/2026 or 9/2026)",
+                    vi: "Vui lòng dùng định dạng MM/YYYY (VD: 09/2026 hoặc 9/2026)",
+                    es: "Por favor usa el formato MM/YYYY (ej. 09/2026 o 9/2026)"
                 },
                 errorPast: {
                     en: "Please enter a future date",
