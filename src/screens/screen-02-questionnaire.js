@@ -514,80 +514,93 @@ function collectFormData() {
 }
 
 window.submitQuestionnaire = function () {
-  const formData = collectFormData();
-  const userData = Storage.getUserData();
-  const lang = userData.language || 'en';
-  const errorContent = translations.questionnaire.errors;
+  try {
+    console.log('[Questionnaire] Submitting...');
+    const formData = collectFormData();
+    console.log('[Questionnaire] Data collected:', formData);
 
-  // Clear previous errors
-  document.querySelectorAll('[id^="error-"]').forEach(el => {
-    el.textContent = '';
-    el.classList.add('hidden');
-  });
-  document.querySelectorAll('.border-red-500').forEach(el => {
-    el.classList.remove('border-red-500', 'bg-red-50');
-  });
+    const userData = Storage.getUserData();
+    const lang = userData.language || 'en';
+    const errorContent = translations.questionnaire.errors;
 
-  // Validate
-  const validation = UserDataModel.validateQuestionnaire(formData);
-  if (!validation.valid) {
-    let firstError = null;
-
-    validation.errors.forEach(error => {
-      const errorEl = document.getElementById(`error-${error.field}`);
-      if (errorEl) {
-        // Get translated message if available, otherwise fallback to default
-        const message = errorContent[error.field] ? Utils.t(errorContent[error.field], lang) : error.message;
-        errorEl.textContent = message;
-        errorEl.classList.remove('hidden');
-        errorEl.classList.add('fade-in');
-
-        // Highlight input/label if possible
-        const input = document.querySelector(`input[name="${error.field}"]`);
-        if (input) {
-          const label = input.closest('label');
-          if (label) {
-            // For radio/checkbox groups, we might need a different strategy depending on exact DOM
-            // But generally highlighting the error text is sufficient.
-            // We can try to add a class to the container if we want.
-          }
-        }
-
-        if (!firstError) firstError = errorEl;
-      }
+    // Clear previous errors
+    document.querySelectorAll('[id^="error-"]').forEach(el => {
+      el.textContent = '';
+      el.classList.add('hidden');
+    });
+    document.querySelectorAll('.border-red-500').forEach(el => {
+      el.classList.remove('border-red-500', 'bg-red-50');
     });
 
-    if (firstError) {
-      firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // Validate
+    console.log('[Questionnaire] Validating...');
+    const validation = UserDataModel.validateQuestionnaire(formData);
+    console.log('[Questionnaire] Validation result:', validation);
+
+    if (!validation.valid) {
+      console.log('[Questionnaire] Validation failed:', validation.errors);
+      let firstError = null;
+
+      validation.errors.forEach(error => {
+        const errorEl = document.getElementById(`error-${error.field}`);
+        if (errorEl) {
+          // Get translated message if available, otherwise fallback to default
+          const message = errorContent[error.field] ? Utils.t(errorContent[error.field], lang) : error.message;
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+          errorEl.classList.add('fade-in');
+
+          if (!firstError) firstError = errorEl;
+        }
+      });
+
+      if (firstError) {
+        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+      return;
     }
-    return;
-  }
 
-  // Add device group
-  formData.deviceGroup = Utils.determineDeviceGroup(formData.devices);
+    // Add device group
+    console.log('[Questionnaire] Determining device group...');
+    formData.deviceGroup = Utils.determineDeviceGroup(formData.devices);
+    console.log('[Questionnaire] Device group:', formData.deviceGroup);
 
-  // Calculate feasibility
-  const feasibility = Utils.calculateFeasibility(formData);
+    // Calculate feasibility
+    console.log('[Questionnaire] Calculating feasibility...');
+    const feasibility = Utils.calculateFeasibility(formData);
+    console.log('[Questionnaire] Feasibility:', feasibility);
 
-  // Save formData
-  Storage.updateUserData({ formData });
+    // Save formData
+    console.log('[Questionnaire] Saving user data...');
+    Storage.updateUserData({ formData });
 
-  if (feasibility.feasible) {
-    // Navigate to study plan
-    navigateTo('screen-03');
-  } else {
-    // Plan is not feasible
-    // Ensure the inline error is visible
-    checkFeasibilityInline(formData);
+    if (feasibility.feasible) {
+      console.log('[Questionnaire] Plan feasible. Navigating to screen-03...');
+      // Navigate to study plan
+      if (typeof navigateTo === 'function') {
+        navigateTo('screen-03');
+      } else {
+        console.error('[Questionnaire] navigateTo function not found!');
+        window.location.hash = '#/screen-03';
+      }
+    } else {
+      console.log('[Questionnaire] Plan NOT feasible. Showing feedback...');
+      // Plan is not feasible
+      // Ensure the inline error is visible
+      checkFeasibilityInline(formData);
 
-    // Scroll to feasibility feedback
-    const feedbackEl = document.getElementById('feasibility-feedback');
-    if (feedbackEl) {
-      feedbackEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      // Optional: Add a shake animation or highlight effect here
-      feedbackEl.classList.add('animate-pulse');
-      setTimeout(() => feedbackEl.classList.remove('animate-pulse'), 500);
+      // Scroll to feasibility feedback
+      const feedbackEl = document.getElementById('feasibility-feedback');
+      if (feedbackEl) {
+        feedbackEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Optional: Add a shake animation or highlight effect here
+        feedbackEl.classList.add('animate-pulse');
+        setTimeout(() => feedbackEl.classList.remove('animate-pulse'), 500);
+      }
     }
+  } catch (error) {
+    console.error('[Questionnaire] CRITICAL ERROR in submitQuestionnaire:', error);
+    alert('An unexpected error occurred: ' + error.message);
   }
 };
 

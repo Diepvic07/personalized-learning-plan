@@ -723,8 +723,8 @@ const PLANS = {
         goal: "IELTS",
         levels: ["B1", "B2"],
         deviceGroup: "B",
-        doc_en: "1igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
-        doc_vn: "1aqcRfcqp_bCFt8Dkb0DSRZbJeIzHqIOD6SCi9fb4Fls",
+        doc_en: "igVjHvFVkrSUDQWYPmc6E93ko8Ty_LLKPDbUMIwJF5o",
+        doc_vn: "aqcRfcqp_bCFt8Dkb0DSRZbJeIzHqIOD6SCi9fb4Fls",
         phases_en: [
             {
                 name: "Phase 1",
