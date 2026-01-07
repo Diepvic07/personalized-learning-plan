@@ -376,9 +376,9 @@ function validateDateInput(dateStr) {
       const userData = Storage.getUserData();
       const lang = userData.language || 'en';
       const content = translations.questionnaire;
-      // Safety check for content (though Utils.t now handles it)
-      if (content && content.errorFormat) {
-        errorEl.textContent = Utils.t(content.errorFormat, lang);
+      const errorContent = content?.questions?.q5_target_date;
+      if (errorContent && errorContent.errorFormat) {
+        errorEl.textContent = Utils.t(errorContent.errorFormat, lang);
       } else {
         errorEl.textContent = 'Invalid date format (MM/YYYY)';
       }
@@ -406,7 +406,12 @@ function validateDateInput(dateStr) {
       const userData = Storage.getUserData();
       const lang = userData.language || 'en';
       const content = translations.questionnaire;
-      errorEl.textContent = Utils.t(content.errorPast, lang);
+      const errorContent = content?.questions?.q5_target_date;
+      if (errorContent && errorContent.errorPast) {
+        errorEl.textContent = Utils.t(errorContent.errorPast, lang);
+      } else {
+        errorEl.textContent = 'Please enter a future date';
+      }
       errorEl.className = 'text-xs font-medium mt-1 text-red-500 fade-in';
     }
     if (inputEl) inputEl.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
