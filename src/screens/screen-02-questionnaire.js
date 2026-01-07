@@ -19,7 +19,7 @@ function renderQuestionnaire() {
         <button onclick="navigateTo('screen-01')" class="text-slate-900 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 transition-colors">
           <span class="material-symbols-outlined">arrow_back</span>
         </button>
-        <h2 class="text-[#1da1f2] text-2xl font-bold leading-tight tracking-tight flex-1 text-center pr-10">eJOY English</h2>
+        <h2 class="text-[#1da1f2] text-2xl font-bold leading-tight tracking-tight flex-1 text-center pr-10">eJOY English (Debug Linked)</h2>
       </div>
       
       <!-- Progress -->
