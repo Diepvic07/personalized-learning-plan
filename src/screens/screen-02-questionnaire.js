@@ -19,7 +19,7 @@ function renderQuestionnaire() {
         <button onclick="navigateTo('screen-01')" class="text-slate-900 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 transition-colors">
           <span class="material-symbols-outlined">arrow_back</span>
         </button>
-        <h2 class="text-[#1da1f2] text-2xl font-bold leading-tight tracking-tight flex-1 text-center pr-10">eJOY English (Debug Linked)</h2>
+        <h2 class="text-[#1da1f2] text-2xl font-bold leading-tight tracking-tight flex-1 text-center pr-10">eJOY English</h2>
       </div>
       
       <!-- Progress -->
@@ -50,7 +50,7 @@ function renderQuestionnaire() {
       <div class="fixed bottom-0 left-0 right-0 z-20 mx-auto max-w-md">
         <div class="h-12 w-full bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
         <div class="bg-white p-4 pt-0 pb-6 border-t border-slate-100">
-          <button type="button" onclick="submitQuestionnaire()" class="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-transform active:scale-[0.98] hover:bg-blue-600">
+          <button type="button" id="btn-submit-questionnaire" class="flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-4 text-base font-bold text-white shadow-lg shadow-primary/30 transition-transform active:scale-[0.98] hover:bg-blue-600">
             ${Utils.t(content.submit, lang)}
             <span class="material-symbols-outlined">arrow_forward</span>
           </button>
@@ -344,8 +344,19 @@ function setupQuestionnaireListeners() {
       // Also update visuals initially in case of re-mount
       updateQuestionnaireVisuals();
     }, 100);
+
+    // Submit button listener
+    const submitBtn = document.getElementById('btn-submit-questionnaire');
+    if (submitBtn) {
+      console.log('[Questionnaire] Attaching submit listener');
+      submitBtn.addEventListener('click', window.submitQuestionnaire);
+    } else {
+      console.error('[Questionnaire] Submit button NOT found');
+    }
   }
 }
+
+console.log('[Questionnaire] Loaded screen-02-questionnaire.js');
 
 function validateDateInput(dateStr) {
   const errorEl = document.getElementById('targetDateError');
