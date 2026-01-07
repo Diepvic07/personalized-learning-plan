@@ -191,6 +191,7 @@ const Utils = {
      * @returns {string} Translated text
      */
     t(translationObj, lang = null) {
+        if (!translationObj) return '';
         const currentLang = lang || Storage.getUserData().language || CONFIG.app.defaultLanguage;
         return translationObj[currentLang] || translationObj[CONFIG.app.defaultLanguage] || '';
     }

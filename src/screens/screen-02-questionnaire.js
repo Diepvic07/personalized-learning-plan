@@ -369,17 +369,29 @@ function validateDateInput(dateStr) {
   }
 
   // Check format MM/YYYY
-  const formatRegex = /^(0[1-9]|1[0-2])\/20[2-9][0-9]$/;
+  // Check format MM/YYYY or M/YYYY
+  const formatRegex = /^([0-9]|0[1-9]|1[0-2])\/20[2-9][0-9]$/;
   if (!formatRegex.test(dateStr)) {
     if (errorEl) {
       const userData = Storage.getUserData();
       const lang = userData.language || 'en';
       const content = translations.questionnaire;
-      errorEl.textContent = Utils.t(content.errorFormat, lang);
+      // Safety check for content (though Utils.t now handles it)
+      if (content && content.errorFormat) {
+        errorEl.textContent = Utils.t(content.errorFormat, lang);
+      } else {
+        errorEl.textContent = 'Invalid date format (MM/YYYY)';
+      }
       errorEl.className = 'text-xs font-medium mt-1 text-red-500 fade-in';
     }
     if (inputEl) inputEl.classList.add('border-red-500', 'focus:border-red-500', 'focus:ring-red-500');
     return false;
+  }
+
+  // Normalize date string (pad month if needed)
+  const parts = dateStr.split('/');
+  if (parts[0].length === 1) {
+    dateStr = `0${parts[0]}/${parts[1]}`;
   }
 
   // Check valid date (not past)
