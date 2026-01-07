@@ -71,7 +71,7 @@ const UserDataModel = {
             errors.push({ field: 'why', message: 'Goal specification is required' });
         }
 
-        if (!data.targetDate || !data.targetDate.match(/^\d{2}\/\d{4}$/)) {
+        if (!data.targetDate || !data.targetDate.match(/^([0-9]|0[1-9]|1[0-2])\/20[2-9][0-9]$/)) {
             errors.push({ field: 'targetDate', message: 'Valid target date (MM/YYYY) is required' });
         } else {
             // Check if date is in the future
