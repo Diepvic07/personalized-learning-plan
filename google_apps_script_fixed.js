@@ -72,7 +72,7 @@ const EMAIL_TEMPLATES = {
             `Bước tiếp theo là gì?\n` +
             `Để giúp bạn khởi đầu thuận lợi, một thành viên của đội ngũ eJOY sẽ sớm liên hệ với bạn để hướng dẫn quy trình giới thiệu và giải đáp mọi thắc mắc.\n\n` +
             `Chúng tôi rất hào hứng được đồng hành cùng bạn.\n\n` +
-            `Chúc bạn học tốt!\n` +
+            `Chúc bạn học thật vui và hiệu quả!\n` +
             `Đội ngũ eJOY`,
         htmlBody: (name, link) => `<p>Chào ${name},</p>` +
             `<p>Chúc mừng bạn đã ưu tiên sự phát triển bản thân! Cam kết học tập của bạn là bước đầu tiên hướng tới thành công trong tương lai.</p>` +
@@ -82,7 +82,7 @@ const EMAIL_TEMPLATES = {
             `<h3>Bước tiếp theo là gì?</h3>` +
             `<p>Để giúp bạn khởi đầu thuận lợi, <strong>một thành viên của đội ngũ eJOY sẽ sớm liên hệ với bạn</strong> để hướng dẫn quy trình giới thiệu và giải đáp mọi thắc mắc.</p>` +
             `<p>Chúng tôi rất hào hứng được đồng hành cùng bạn.</p>` +
-            `<p><strong>Chúc bạn học tốt!</strong><br>` +
+            `<p><strong>Chúc bạn học thật vui và hiệu quả!</strong><br>` +
             `<em>Đội ngũ eJOY</em></p>`
     },
     es: {
@@ -205,7 +205,8 @@ function doGet(e) {
         const htmlBody = template.htmlBody(displayName, docUrl);
 
         GmailApp.sendEmail(userEmail, emailSubject, textBody, {
-            htmlBody: htmlBody
+            htmlBody: htmlBody,
+            name: "Diep Bui, eJOY Learning"
         });
 
         // 7. Return Result
@@ -232,7 +233,7 @@ function testDoGet() {
     const mockAndEvent = {
         parameter: {
             name: "Test User",
-            email: "diep.vic.07@gmail.com", // CHANGE TO YOUR EMAIL FOR TESTING
+            email: "diepvic@gmail.com", //  EMAIL FOR TESTING
             planId: "5",
             nativeLanguage: "vi",
             templateId: "1BaPRUBfuRnlj8jP6rxprpEgGzaah1oTULNr2giXNxJ8", // Example Template ID
